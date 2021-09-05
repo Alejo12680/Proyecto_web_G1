@@ -3,7 +3,7 @@
     padding: 0;
 }
 div#contenedor{
-    width: 80%;
+    width: 90%;
     height: 1000px;
     background-color: rgb(224, 221, 221);
     margin: 0.5em auto;
@@ -11,19 +11,57 @@ div#contenedor{
 }
 div#header{
     height:15%;
-    background-color: rgb(154, 156, 156);
     border-radius: 0.5em;
     margin: 0.3em;
-    font-size: 40px;
-    text-align: center;
+    background-size: 100% 100%;
+    animation: banner 30s infinite;
+    }
+@keyframes banner {
+    0%, 30%{
+        background-image: url(img/banner1.jfif);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.1;
+    }
+    35%, 65%{
+        background-image: url(img/banner2.jfif);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100%{
+        background-image: url(img/banner.PNG);
+        opacity: 1;
+    }            
 }
 div#nav{
-    height: 10%;
-    background-color: rgb(208, 209, 209);
+    height:6%;
     border-radius: 0.5em;
     margin: 0.3em;
-    font-size: 40px;
-    text-align: center;
+    background-color:#000 ;
+    
+}
+#menu{
+    
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: auto;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li a{
+    color: white;
+    display:block;
+    padding: 20px;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    background-color: #4244b8;
 }
 div#contenido{
     height: 55%;
@@ -58,7 +96,8 @@ div#section{
     border-radius: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 40px;
+    font-family: calibri;
+    font-size: 20px;
     text-align: center;
 
 }
@@ -69,7 +108,41 @@ div#aside{
     border-radius: 0.5em;
     float:right;
     font-size: 40px;
-    text-align: center;
-    
+    text-align: center;  
+}
+.art{
+    width: 98%;
+    height: 30%;
+    background-color: beige;
+    margin: 0.3em;
+    align-content: center;
+    border-radius: 0.5em;
 
+
+
+}
+#banner{
+    
+    background-size: 50% 100%;
+    animation: banner 30s infinite;
+    }
+@keyframes banner {
+    0%, 30%{
+        background-image: url(img/banner.jfif);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.1;
+    }
+    35%, 65%{
+        background-image: url(img/banner1.jfif);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100%{
+        background-image: url(img/banner2.jfif);
+        opacity: 1;
+    }            
 }
