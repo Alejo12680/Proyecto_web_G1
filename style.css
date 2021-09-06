@@ -4,40 +4,55 @@
 }
 div#contenedor{
     width: 90%;
-    height: 1000px;
-    background-color: rgb(224, 221, 221);
+    height: 2000px;
+    background-color: rgb(245, 245, 245);
     margin: 0.5em auto;
     padding: 0.5em;
 }
 div#header{
-    height:15%;
+    height: 12%;
     border-radius: 0.5em;
+    border-color: #000;
     margin: 0.3em;
+}
+div#logo{
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-image: url(img/logo.png);
+    background-size: 100% 100%;
+
+}
+
+#banner{
+    float: right;
+    height:100%;
+    width: 85%;
     background-size: 100% 100%;
     animation: banner 30s infinite;
-    }
+}
 @keyframes banner {
     0%, 30%{
-        background-image: url(img/banner1.jfif);
+        background-image: url(img/banner3.jfif);
         opacity: 1;
     }
     31%, 34%{
         opacity: 0.1;
     }
     35%, 65%{
-        background-image: url(img/banner2.jfif);
+        background-image: url(img/banner4.jfif);
         opacity: 1;
     }
     66%, 69%{
         opacity: 0.1;
     }
     70%, 100%{
-        background-image: url(img/banner.PNG);
+        background-image: url(img/banner2.jfif);
         opacity: 1;
     }            
 }
 div#nav{
-    height:6%;
+    height:4%;
     border-radius: 0.5em;
     margin: 0.3em;
     background-color:#000 ;
@@ -57,7 +72,7 @@ div#nav{
 #menu ul li a{
     color: white;
     display:block;
-    padding: 20px;
+    padding: 30px;
     text-decoration: none;
 }
 #menu ul li a:hover{
