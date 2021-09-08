@@ -10,13 +10,13 @@ div#contenedor{
     padding: 0.5em;
     font-family: "calibri";
 }
-div#header{
+header{
     height: 12%;
     border-radius: 0.5em;
     border-color: #000;
     margin: 0.3em;
 }
-div#logo{
+.logo{
     float: left;
     height: 100%;
     width: 15%;
@@ -25,30 +25,30 @@ div#logo{
 
 }
 
-#banner{
+.banner{
     float: right;
     height:100%;
     width: 85%;
     background-size: 100% 100%;
-    animation: banner 30s infinite;
+    animation: banner 10s infinite;
 }
 @keyframes banner {
     0%, 30%{
-        background-image: url(img/banner3.jfif);
+        background-image: url(img/banner1.jpg);
         opacity: 1;
     }
     31%, 34%{
         opacity: 0.1;
     }
     35%, 65%{
-        background-image: url(img/banner4.jfif);
+        background-image: url(img/banner2.jpg);
         opacity: 1;
     }
     66%, 69%{
         opacity: 0.1;
     }
     70%, 100%{
-        background-image: url(img/banner2.jfif);
+        background-image: url(img/banner3.jpg);
         opacity: 1;
     }            
 }
