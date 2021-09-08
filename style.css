@@ -20,7 +20,7 @@ header{
     float: left;
     height: 100%;
     width: 15%;
-    background-image: url(img/logo.png);
+    background-image: url(img/logoHol.png);
     background-size: 100% 100%;
 
 }
@@ -31,24 +31,25 @@ header{
     width: 85%;
     background-size: 100% 100%;
     animation: banner 10s infinite;
+    animation-direction: alternate;
 }
 @keyframes banner {
     0%, 30%{
-        background-image: url(img/banner1.jpg);
+        background-image: url(img/banner1.png);
         opacity: 1;
     }
     31%, 34%{
         opacity: 0.1;
     }
     35%, 65%{
-        background-image: url(img/banner2.jpg);
+        background-image: url(img/banner2.png);
         opacity: 1;
     }
     66%, 69%{
         opacity: 0.1;
     }
     70%, 100%{
-        background-image: url(img/banner3.jpg);
+        background-image: url(img/banner3.png);
         opacity: 1;
     }            
 }
@@ -138,31 +139,7 @@ div#aside{
 
 
 }
-#banner{
-    
-    background-size: 50% 100%;
-    animation: banner 30s infinite;
-    }
-@keyframes banner {
-    0%, 30%{
-        background-image: url(img/banner.jfif);
-        opacity: 1;
-    }
-    31%, 34%{
-        opacity: 0.1;
-    }
-    35%, 65%{
-        background-image: url(img/banner1.jfif);
-        opacity: 1;
-    }
-    66%, 69%{
-        opacity: 0.1;
-    }
-    70%, 100%{
-        background-image: url(img/banner2.jfif);
-        opacity: 1;
-    }            
-}
+
 #fabio{
     color: chartreuse;
     font-size: 20px;
