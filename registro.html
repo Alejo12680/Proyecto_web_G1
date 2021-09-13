@@ -7,44 +7,46 @@
     <title>G1_Travel</title>
 </head>
 <body>
-    <header>
+    <div class="container">
         <header>
             <hgroup>
-                <div id="banner">             
+                 <div id="banner">             
                 </div>
                 <div id="titulo">
-                    <h1>Resgistrate</h1>
+                    <h1>Registrate</h1>
                 </div>
             </hgroup>            
         </header>
         <nav id="menu">
             <ul>
-                    <li><a href="">Boton inicio</a></li>
-                    <li><a href="registro.html">Registro</a></li>
-                    <li><a href="">Boton 3</a></li>
-                    <li><a href="">Boton 4</a></li>
-                    <li><a href="">Boton 5</a></li>
-                    <li><a href="">Boton 6</a></li>
+                <li><a href="">Boton inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="">Boton 3</a></li>
+                <li><a href="">Boton 4</a></li>
+                <li><a href="">Boton 5</a></li>
+                <li><a href="">Boton 6</a></li>
             </ul>
         </nav>
         <br>
         <hr/>
-        <form action="../form-result.php" target="_blank">
+    <section class="form-contacto">
+        <form action="action_page.php" target="_blank">
             <fieldset>
-                <legend>Crear cuenta</legend> 
-                <p><label>Nombre completo: <input type="text" name="nombre"></label></p>
-                <p><label>E-mail: <input type="text" name="mail"></label></p>
-                <p><label>Teléfono: <input type="text" name="phone"></label></p>
-                <p><label>Crear contraseña: <input type="text" name="passw"></label></p>
+                <h3>Crear cuenta</h3>
+            <input class="control" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" style="height: 50px"></textarea><br/>
+            <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese su correo" style="height: 50px"></textarea><br/>
+            <input class="control" type="text" name="phone" id="phone" placeholder="Ingrese su número telefónico" style="height: 50px"></textarea><br/>
+            <input class="control" type="text" name="passw" id="passw" placeholder="Cree su contraseña"style="height: 50px"></textarea><br/>
+            <p> </p>
+            <input class="boton1" type="submit" value="Guardar"><br/>
+        </form>                
+            </fieldset>           
+    </section>
+    </div>
 
-            </fieldset>      
-                  
-            <p>
-                <input type="reset" value="Reiniciar Formulario">
-                <input type="reset" value="Enviar Mensaje">
-            </p>
-        
-        </form>
-    
+
+<footer>
+    <p>Derechos de Autor Reservados &#9426 2021 Proyecto_web_G1</p>
+</footer>      
 </body>
 </html>

@@ -151,3 +151,30 @@ div#aside{
     background-color: aqua;
     font-size: 25px;
 }
+
+.form-contacto p{
+    height: 40px;
+    width: 20;
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 4px;
+    margin-bottom: 16px;
+    line-height: 40px;
+}
+
+.form-contacto.boton1{
+    width: 49%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin-bottom: 16px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+#text{
+    float: right;
+    width: 300px;
+    height: 760px;
+    background-color: rgb(205, 245, 245);
+}
