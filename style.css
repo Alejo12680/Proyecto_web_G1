@@ -178,3 +178,13 @@ div#aside{
     height: 760px;
     background-color: rgb(205, 245, 245);
 }
+.form-contacto.boton2{
+    width: 49%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin-bottom: 16px;
+    margin: 16px 0;
+    font-size: 16px;
+}
