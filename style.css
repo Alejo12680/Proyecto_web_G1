@@ -28,10 +28,12 @@ header{
 .banner{
     float: right;
     height:100%;
-    width: 85%;
+    width: 83%;
     background-size: 100% 100%;
     animation: banner 10s infinite;
     animation-direction: alternate;
+    border-radius: 1em;
+    margin-left: .5em;
 }
 @keyframes banner {
     0%, 30%{

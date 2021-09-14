@@ -109,7 +109,7 @@ div#section{
     float: left;
     height: 100%;
     width: 52%;
-    background-color: #d2691e;
+    background-color: #ebe5e1;
     border-radius: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -148,7 +148,7 @@ div#aside{
 #calendar{
     width: 100%;
     height: 50%;
-    background-color: aqua;
+    background-color: rgb(227, 236, 236);
     font-size: 25px;
 }
 
