@@ -152,37 +152,6 @@ div#aside{
     font-size: 25px;
 }
 
-.form-contacto{
-    width: 500px;
-    background-color: rgb(220, 222, 226);
-    padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    border-radius: 4px;
-}
-.form-contacto h4{
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.control{
-    width: 100%;
-    padding: 10px;
-    border-bottom: 4px;
-    margin-bottom: 16px;
-    border: 1px;
-    font-family: 'calibri';
-    font-size: 18px;
-}
-#ocupacion{
-    width: 62%;
-    padding: 10px;
-    border-bottom: 8px;
-    margin-bottom: 16px;
-    border: 1px;
-    font-family: 'calibri';
-    font-size: 18px;
-}
 .form-contacto p{
     height: 40px;
     width: 20;
@@ -192,15 +161,24 @@ div#aside{
     margin-bottom: 16px;
     line-height: 40px;
 }
-.form-contacto select{
-    height: 40px;
-    width: 20%;
-    font-size: 15px;
-    padding: 6px;
-    border-bottom: 4px;
+
+.form-contacto.boton1{
+    width: 49%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
     margin-bottom: 16px;
+    margin: 16px 0;
+    font-size: 16px;
 }
-.form-contacto .boton1{
+#text{
+    float: right;
+    width: 300px;
+    height: 760px;
+    background-color: rgb(205, 245, 245);
+}
+.form-contacto.boton2{
     width: 49%;
     background-color: #1f53c5;
     border: none;
