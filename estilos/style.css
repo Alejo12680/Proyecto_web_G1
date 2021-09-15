@@ -17,7 +17,7 @@ header{
     float: left;
     height: 100%;
     width: 15%;
-    background-image: url(img/logoHol.png);
+    background-image: url(/img/logoHol.png);
     background-size: 100% 100%;
 
 }
@@ -34,21 +34,21 @@ header{
 }
 @keyframes banner {
     0%, 30%{
-        background-image: url(img/banner1.png);
+        background-image: url(/img/banner1.png);
         opacity: 1;
     }
     31%, 34%{
         opacity: 0.1;
     }
     35%, 65%{
-        background-image: url(img/banner2.png);
+        background-image: url(/img/banner2.png);
         opacity: 1;
     }
     66%, 69%{
         opacity: 0.1;
     }
     70%, 100%{
-        background-image: url(img/banner3.png);
+        background-image: url(/img/banner3.png);
         opacity: 1;
     }            
 }

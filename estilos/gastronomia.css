@@ -20,7 +20,7 @@ header{
     float: left;
     height: 100%;
     width: 15%;
-    background-image: url(img/logoHol.png);
+    background-image: url(/img/logoHol.png);
     background-size: 100% 100%;
 
 }
@@ -37,21 +37,21 @@ header{
 }
 @keyframes banner {
     0%, 30%{
-        background-image: url(img/plantilla\ banner\ comida1.png);
+        background-image: url(/img/plantilla\ banner\ comida1.png);
         opacity: 1;
     }
     31%, 34%{
         opacity: 0.1;
     }
     35%, 65%{
-        background-image: url(img/plantilla\ banner\ comida2.png);
+        background-image: url(/img/plantilla\ banner\ comida2.png);
         opacity: 1;
     }
     66%, 69%{
         opacity: 0.1;
     }
     70%, 100%{
-        background-image: url(img/plantilla\ banner\ comida3.png);
+        background-image: url(/img/plantilla\ banner\ comida3.png);
         opacity: 1;
     }            
 }
@@ -62,9 +62,7 @@ div#nav{
     background-color:#00008b ;
     
 }
-#menu{
-    
-}
+
 #menu ul{
     list-style: none;
     margin: 0;
@@ -113,7 +111,7 @@ div#section{
     height: 100%;
     width: 55.7%;
     background-size: 100% 100%;
-    background-image: url(img/madera.jpg);
+    background-image: url(/img/madera.jpg);
     border-radius: 1em;
     font-family: calibri;
     font-size: 20px;
@@ -122,12 +120,11 @@ div#section{
 
 .art{
     width: 98%;
-    height: 10%;
+    height: 25%;
     background-color: beige;
     margin: 0.5em;
     border-radius: 0.5em;
-    /* opacity: 70%; */
-    /* text-align: justify; */
+    /* opacity: 75%;  */   
 }
 
 div#aside{
