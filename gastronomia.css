@@ -28,28 +28,30 @@ header{
 .banner{
     float: right;
     height:100%;
-    width: 85%;
+    width: 83%;
     background-size: 100% 100%;
     animation: banner 10s infinite;
     animation-direction: alternate;
+    border-radius: 1em;
+    margin-left: .5em;
 }
 @keyframes banner {
     0%, 30%{
-        background-image: url(img/banner1.png);
+        background-image: url(img/plantilla\ banner\ comida1.png);
         opacity: 1;
     }
     31%, 34%{
         opacity: 0.1;
     }
     35%, 65%{
-        background-image: url(img/banner2.png);
+        background-image: url(img/plantilla\ banner\ comida2.png);
         opacity: 1;
     }
     66%, 69%{
         opacity: 0.1;
     }
     70%, 100%{
-        background-image: url(img/banner3.png);
+        background-image: url(img/plantilla\ banner\ comida3.png);
         opacity: 1;
     }            
 }
@@ -82,7 +84,7 @@ div#nav{
 }
 div#contenido{
     height: 55%;
-    background-color: #ffff;
+    background-color: #fff8dc;
     border-radius: 0.5em;
     margin: 0.3em;
     font-size: 40px;
@@ -99,45 +101,45 @@ div#footer{
 div#section1{
     float: left;
     height: 100%;
-    width: 20%;
+    width: 21%;
     background-color: #a4a4a4a4;
     border-radius: 0.5em;
+    margin-right: 0.5em;
     font-size: 40px;
     text-align: center;
 }
 div#section{
     float: left;
     height: 100%;
-    width: 52%;
-    background-color: #d2691e;
-    border-radius: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    width: 55.7%;
+    background-size: 100% 100%;
+    background-image: url(img/27740.png);
+    border-radius: 1em;
     font-family: calibri;
     font-size: 20px;
     text-align: center;
-
 }
+
+.art{
+    width: 98%;
+    height: 10%;
+    background-color: beige;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    /* opacity: 70%; */
+    /* text-align: justify; */
+}
+
 div#aside{
     height: 100%;
-    width: 25%;
+    width: 21%;
     background-color: slategrey;
-    border-radius: 0.5em;
+    border-radius: 0.5em;  
+    margin-left: 0.5em; 
     float:right;
     font-size: 40px;
     color: red;
     text-align: center;  
-}
-.art{
-    width: 98%;
-    height: 30%;
-    background-color: beige;
-    margin: 0.3em;
-    align-content: center;
-    border-radius: 0.5em;
-
-
-
 }
 
 #fabio{
@@ -145,68 +147,3 @@ div#aside{
     font-size: 20px;
 }
 
-#calendar{
-    width: 100%;
-    height: 50%;
-    background-color: aqua;
-    font-size: 25px;
-}
-
-.form-contacto{
-    width: 500px;
-    background-color: rgb(220, 222, 226);
-    padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    border-radius: 4px;
-}
-.form-contacto h4{
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.control{
-    width: 100%;
-    padding: 10px;
-    border-bottom: 4px;
-    margin-bottom: 16px;
-    border: 1px;
-    font-family: 'calibri';
-    font-size: 18px;
-}
-#ocupacion{
-    width: 62%;
-    padding: 10px;
-    border-bottom: 8px;
-    margin-bottom: 16px;
-    border: 1px;
-    font-family: 'calibri';
-    font-size: 18px;
-}
-.form-contacto p{
-    height: 40px;
-    width: 20;
-    font-size: 15px;
-    padding: 10px;
-    border-bottom: 4px;
-    margin-bottom: 16px;
-    line-height: 40px;
-}
-.form-contacto select{
-    height: 40px;
-    width: 20%;
-    font-size: 15px;
-    padding: 6px;
-    border-bottom: 4px;
-    margin-bottom: 16px;
-}
-.form-contacto .boton1{
-    width: 49%;
-    background-color: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin-bottom: 16px;
-    margin: 16px 0;
-    font-size: 16px;
-}
