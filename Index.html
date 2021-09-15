@@ -21,15 +21,15 @@
                     <li><a href="Index.html">Inicio</a></li>
                     <li><a href="registro.html">Registro</a></li>
                     <li><a href="logueo.html">Ingresar</a></li>
-                    <li><a href="">Boton 4</a></li>
-                    <li><a href="">Boton 5</a></li>
+                    <li><a href="restaurantes.html">Gastronomia</a></li>
+                    <li><a href="">Contactanos</a></li>
                     <li><a href="">Boton 6</a></li>
 
                 </ul>
             </nav>
         </div>
         <div id="contenido">
-            <div id="section1">section1
+            <div id="section1">
                 <div id="calendario">
                     <div id="anterior" onclick="mesantes()"></div>
                     <div id="posterior" onclick="mesdespues()"></div>
@@ -46,7 +46,9 @@
                     <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
                     <div id="buscafecha">
                       <form action="#" name="buscar">
-                        <p>Buscar ... MES
+                        <p>Buscar </br> 
+                          <input type="text" name="ss" id="ss" class="c-autocomplete__input sb-searchbox__input sb-destination__input" placeholder="¿Nombre del hotel?" value="" autocomplete="off" data-component="search/destination/input-placeholder" data-sb-id="main" data-input="" aria-autocomplete="both" aria-label="Escribe tu destino"></br> 
+                          <input type="text" name="buscadia" maxlength="2" size="2" /> ... Día</br> 
                           <select name="buscames">
                             <option value="0">Enero</option>
                             <option value="1">Febrero</option>
@@ -61,15 +63,15 @@
                             <option value="10">Noviembre</option>
                             <option value="11">Diciembre</option>
                           </select>
-                        ... AÑO ...
+                          ... Mes</br> 
                           <input type="text" name="buscaanno" maxlength="4" size="4" />
-                        ... 
+                        ... Año </br> 
                           <input type="button" value="BUSCAR" onclick="mifecha()" />
                         </p>
                       </form>
                     </div>
                   </div>
-                <div id="filtro">filter</div>
+                <div id="filtro">Filtro</div>
             </div>
             <div id="section">Section2
                 <article class="art">
@@ -84,7 +86,11 @@
                 <p id="fabio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum ex quo quisquam incidunt, amet enim tempore assumenda expedita odit quos ea consequatur quasi nihil asperiores nemo numquam ipsa debitis.</p>
             </div>
         </div>
-        <div id="footer">Footer</div>
+        <div id="footer">
+          <p>  Derechos de Autor Reservados &#9426 2021  G1_Proyecto de clase</p> 
+        
+          </ul>  
+        </div>
     </div>
 </body>
 </html>

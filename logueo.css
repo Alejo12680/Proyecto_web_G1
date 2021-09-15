@@ -28,10 +28,12 @@ header{
 .banner{
     float: right;
     height:100%;
-    width: 85%;
+    width: 83%;
     background-size: 100% 100%;
     animation: banner 10s infinite;
     animation-direction: alternate;
+    border-radius: 1em;
+    margin-left: .5em;
 }
 @keyframes banner {
     0%, 30%{
@@ -60,9 +62,7 @@ div#nav{
     background-color:#00008b ;
     
 }
-#menu{
-    
-}
+
 #menu ul{
     list-style: none;
     margin: 0;
@@ -74,9 +74,12 @@ div#nav{
 #menu ul li a{
     color: white;
     display:block;
-    padding: 30px;
+    padding: 29px;
     text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
 }
+#
 #menu ul li a:hover{
     background-color: #4244b8;
 }
@@ -109,7 +112,7 @@ div#section{
     float: left;
     height: 100%;
     width: 52%;
-    background-color: #d2691e;
+    background-color: #ebe5e1;
     border-radius: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -124,9 +127,13 @@ div#aside{
     background-color: slategrey;
     border-radius: 0.5em;
     float:right;
-    font-size: 40px;
-    color: red;
+    font-size: 43px;
+    color: black;
     text-align: center;  
+}
+#fabio{
+    color: black;
+    font-size: 20px;
 }
 .art{
     width: 98%;
@@ -135,53 +142,36 @@ div#aside{
     margin: 0.3em;
     align-content: center;
     border-radius: 0.5em;
-
-
-
-}
-
-#fabio{
-    color: chartreuse;
-    font-size: 20px;
 }
 
 #calendar{
     width: 100%;
     height: 50%;
-    background-color: aqua;
+    background-color: rgb(227, 236, 236);
     font-size: 25px;
 }
 
 .form-contacto{
-    width: 500px;
+    width: 80%;
     background-color: rgb(220, 222, 226);
     padding: 30px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 40px;
     border-radius: 4px;
 }
-.form-contacto h4{
-    font-size: 22px;
+.form-contacto h3{
+    font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
 .control{
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border-bottom: 4px;
     margin-bottom: 16px;
     border: 1px;
     font-family: 'calibri';
-    font-size: 18px;
-}
-#ocupacion{
-    width: 62%;
-    padding: 10px;
-    border-bottom: 8px;
-    margin-bottom: 16px;
-    border: 1px;
-    font-family: 'calibri';
-    font-size: 18px;
+    font-size: 20px;
 }
 .form-contacto p{
     height: 40px;
@@ -200,7 +190,7 @@ div#aside{
     border-bottom: 4px;
     margin-bottom: 16px;
 }
-.form-contacto .boton1{
+.form-contacto .boton2{
     width: 49%;
     background-color: #1f53c5;
     border: none;
@@ -208,5 +198,5 @@ div#aside{
     color: white;
     margin-bottom: 16px;
     margin: 16px 0;
-    font-size: 16px;
+    font-size: 22px;
 }

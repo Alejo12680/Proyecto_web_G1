@@ -6,51 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="logueo.css">
     <link rel="shortcut icon" href="img/icono.png">
-    <title>Ingresar</title>
-
+    <title>Inicio de Sesion</title>
 </head>
 <body>
-    <div class="container">
+    <div id="contenedor">
         <header>
-            <hgroup>
-                 <div id="banner">             
-                </div>
-                <div id="titulo">
-                    <h1>Ingresa</h1>
-                </div>
-            </hgroup>            
+            <div class="banner"></div>
+            <div class="logo"></div>
         </header>
         <div id="nav">
             <nav id="menu">
                 <ul>
-                    <li><a href="Index.html">Boton inicio</a></li>
+                    <li><a href="Index.html">Inicio</a></li>
                     <li><a href="registro.html">Registro</a></li>
                     <li><a href="logueo.html">Ingresar</a></li>
-                    <li><a href="">Boton 4</a></li>
-                    <li><a href="">Boton 5</a></li>
+                    <li><a href="restaurantes.html">Gastronomia</a></li>
+                    <li><a href="">Contactanos</a></li>
                     <li><a href="">Boton 6</a></li>
 
                 </ul>
-            </nav></div>
-        <br>
-        <hr/>
-    <section class="form-contacto">
-        <form action="action_page.php" target="_blank">
-            <fieldset>
-                <h3>Crear cuenta</h3>
-            
-            <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese su correo" style="height: 50px"></textarea><br/>
-            <input class="control" type="text" name="passw" id="passw" placeholder="Cree su contraseña"style="height: 50px"></textarea><br/>
-            <p> </p>
-            <input class="boton2" type="submit" value="Entrar"><br/>
-        </form>                
-            </fieldset>           
-    </section>
+            </nav>
+        </div>
+        <div id="contenido">
+            <div id="section1">section1
+                <div id="calendar"></div>
+                <div id="filtro">filter</div>
+            </div>
+            <div id="section">Section2
+                <section class="form-contacto">
+                    <form >
+                        <fieldset>
+                            <h3>Inicio de Sesion</h3>
+                        
+                        <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese su correo" style="height: 50px"></textarea><br/>
+                       
+                        <input class="control" type="text" name="passw" id="passw" placeholder="Cree su contraseña"style="height: 50px"></textarea><br/>
+                        <p> </p>
+                        <input class="boton2" type="submit" value="Iniciar"><br/>
+                    </form>  
+                        <p>¿Todavía no tienes una cuenta?</p>
+                    
+                        <a href="registro.html">Crea una Cuenta</a></li>         
+                        </fieldset>           
+                </section>
+            </div>
+            <div id="aside">Aside
+                <p id="fabio"></p>
+            </div>
+        </div>
+        <div id="footer">Footer</div>
     </div>
-
-
-<footer>
-    <p>Derechos de Autor Reservados &#9426 2021 Proyecto_web_G1</p>
-</footer>     
 </body>
 </html>

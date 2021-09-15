@@ -3,17 +3,14 @@
     padding: 0;
 }
 div#contenedor{
-    width: 95%;
-    height: 2000px;
+    width: 95%; height: 2000px;
     background-color: #fff8dc;
-    margin: 0.5em auto;
-    padding: 0.5em;
+    margin: 0.5em auto; padding: 0.5em;
     font-family: "calibri";
 }
 header{
     height: 12%;
-    border-radius: 0.5em;
-    border-color: #000;
+    border-radius: 0.5em; border-color: #000;
     margin: 0.3em;
 }
 .logo{
@@ -62,9 +59,7 @@ div#nav{
     background-color:#00008b ;
     
 }
-#menu{
-    
-}
+
 #menu ul{
     list-style: none;
     margin: 0;
@@ -76,15 +71,15 @@ div#nav{
 #menu ul li a{
     color: white;
     display:block;
-    padding: 30px;
+    padding: 29px;
     text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 #menu ul li a:hover{
     background-color: #4244b8;
 
 }
-
-
 div#contenido{
     height: 55%;
     background-color: #ffff;
@@ -98,14 +93,14 @@ div#footer{
     background-color: rgb(75, 74, 72);
     border-radius: 0.5em;
     margin: 0.3em;
-    font-size: 40px;
-    text-align: center;
+    font-size: 16px; color: rgb(167, 166, 165);
+       
 }
 div#section1{
     float: left;
     height: 100%;
     width: 20%;
-    background-color: #a4a4a4a4;
+    background-color:cornsilk;
     border-radius: 0.5em;
     font-size: 40px;
     text-align: center;
@@ -130,7 +125,7 @@ div#aside{
     border-radius: 0.5em;
     float:right;
     font-size: 40px;
-    color: red;
+    color: black;
     text-align: center;  
 }
 .art{
@@ -140,13 +135,10 @@ div#aside{
     margin: 0.3em;
     align-content: center;
     border-radius: 0.5em;
-
-
-
 }
 
 #fabio{
-    color: chartreuse;
+    color: black;
     font-size: 20px;
 }
 
@@ -206,40 +198,79 @@ div#aside{
     margin-bottom: 16px;
 }
 .form-contacto .boton1{
-    width: 49%;
-    background-color: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin-bottom: 16px;
-    margin: 16px 0;
-    font-size: 16px;
+    width: 49%; background-color: #1f53c5;
+    border: none; padding: 12px;
+    color: white; margin-bottom: 16px;
+    margin: 16px 0; font-size: 16px;
 }
 
 /*div principal del calendario*/
-#calendario { border: 4px double black ; max-width: 536px; 
-              background-color:#fffafa; text-align: center; }
+#calendario {
+    border: 4px double black ; max-width: 536px; 
+    background-color:#fffafa; text-align: center; color: rgb(42, 77, 173);
+}
 /*tabla del calendario*/
-#diasc { border: 1px solid black; border-collapse: 
-         separate; border-spacing: 4px; }
-#diasc th,#diasc td { font: normal 14pt arial; width: 70px; height: 30px; }
-#diasc th { color: #990099; background-color: #5ecdec }
-#diasc td { color: #492736; background-color: #9bf5ff }
+#diasc { 
+    border: 1px solid black; border-collapse: 
+    separate; border-spacing: 4px;
+}
+#diasc th,#diasc td {
+    font: normal 14pt arial;
+    width: 70px; height: 30px;
+}
+#diasc th {
+    color: white;
+    background-color: rgb(42, 77, 173)
+}
+#diasc td {
+    color: #492736;
+    background-color: rgb(42, 77, 173)
+}
 /*línea de la fecha actual*/
-#fechaactual { font: bold 12pt arial; padding: 0.4em }
-#fechaactual i { cursor: pointer ; }
-#fechaactual i:hover { color: blue; text-decoration: underline; }
+#fechaactual {
+    font: bold 12pt arial; padding: 0.4em
+}
+#fechaactual i {
+    cursor: pointer ;
+}
+#fechaactual i:hover {
+    color: blue;
+    text-decoration: underline;
+}
 /*formulario de busqueda de fechas*/
-#buscafecha { background-color: #663366; color: #9bf5ff; padding: 5px }
-#buscafecha select, #buscafecha input  { background-color: #9bf5ff; 
-            color: #990099; font: bold 10pt arial;  }
-#buscafecha [type=text]  { text-align: center; }
-#buscafecha  [type=button] { cursor: pointer; }
+#buscafecha {
+    background-color: rgb(42, 77, 173);
+    color: #050505; padding: 5px
+}
+#buscafecha {
+    background-color: rgb(42, 77, 173);
+    color: white; padding: 5px
+}
+#buscafecha select, #buscafecha input  {
+    background-color: ##buscafecha {
+        background-color: #565fad; color: #050505; padding: 5px}; 
+    color: #565fad; font: bold 10pt arial;
+}
+#buscafecha [type=text]  {
+    text-align: center;
+}
+#buscafecha  [type=button] {
+    cursor: pointer;
+}
 /*cabecera del calendario*/ 
-#anterior { float: left; width: 100px; font: bold 12pt arial;
-          padding: 0.5em 0.1em; cursor: pointer ; }
-#posterior { float: right; width: 100px; font: bold 12pt arial; 
-          padding: 0.5em 0.1em; cursor: pointer ;}
-#anterior:hover {color: blue;text-decoration: underline;}
-#posterior:hover {color: blue; text-decoration: underline;}
-#titulos { font: normal 15pt "arial black"; padding: 0.2em; }
+#anterior {
+    float: left; width: 100px; font: bold 12pt arial;
+    padding: 0.5em 0.1em; cursor: pointer ;
+}
+#posterior {
+    float: right; width: 100px; font: bold 12pt arial; 
+    padding: 0.5em 0.1em; cursor: pointer ;
+}
+#anterior:hover {
+    color: blue;text-decoration: underline;
+}
+#posterior:hover {
+    color: blue; text-decoration: underline;
+}
+#titulos {font: normal 15pt "arial black"; padding: 0.2em;
+}
