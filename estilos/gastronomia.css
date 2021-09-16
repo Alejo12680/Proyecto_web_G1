@@ -3,11 +3,9 @@
     padding: 0;
 }
 div#contenedor{
-    width: 95%;
-    height: 2000px;
+    width: 95%; height: 2000px;
     background-color: #fff8dc;
-    margin: 0.5em auto;
-    padding: 0.5em;
+    margin: 0.5em auto; padding: 0.5em;
     font-family: "calibri";
 }
 header{
@@ -63,7 +61,7 @@ div#nav{
     
 }
 
-#menu ul{
+menu ul{
     list-style: none;
     margin: 0;
     padding: auto;
@@ -74,12 +72,16 @@ div#nav{
 #menu ul li a{
     color: white;
     display:block;
-    padding: 30px;
+    padding: 29px;
     text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 #menu ul li a:hover{
     background-color: #4244b8;
+
 }
+
 div#contenido{
     height: 55%;
     background-color: #fff8dc;
@@ -118,13 +120,69 @@ div#section{
     text-align: center;
 }
 
-.art{
+#container{
     width: 98%;
-    height: 25%;
-    background-color: beige;
+    height: 23%;
+    background-color: rgba(245, 245, 220, 0.5);
     margin: 0.5em;
-    border-radius: 0.5em;
-    /* opacity: 75%;  */   
+    border-radius: 2em;
+    position: relative;
+       
+}
+
+#container2{
+    width: 98%;
+    height: 23%;
+    background-color: rgba(245, 245, 220, 0.5);
+    margin: 0.5em;
+    border-radius: 2em;
+    position: relative;
+       
+}
+
+#container3{
+    width: 98%;
+    height: 23%;
+    background-color: rgba(245, 245, 220, 0.5);
+    margin: 0.5em;
+    border-radius: 2em;
+    position: relative;
+       
+}
+
+#container4{
+    width: 98%;
+    height: 23%;
+    background-color: rgba(245, 245, 220, 0.5);
+    margin: 0.5em;
+    border-radius: 2em;
+    position: relative;
+       
+}
+
+.img{
+    position: absolute;
+    left: -80px;
+    bottom: -80px;    
+}
+
+.img:hover{
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.titulo{
+    position: absolute;
+    left: 8.7em;
+    top: 1em;         
+}
+
+.text{
+    position: absolute;
+    left: 12em;
+    top: 5em;
+    padding: 0 1rem;
+    text-align: justify;
+        
 }
 
 div#aside{

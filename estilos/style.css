@@ -10,7 +10,8 @@ div#contenedor{
 }
 header{
     height: 12%;
-    border-radius: 0.5em; border-color: #000;
+    border-radius: 0.5em; 
+    border-color: #000;
     margin: 0.3em;
 }
 .logo{
@@ -80,9 +81,10 @@ div#nav{
     background-color: #4244b8;
 
 }
+
 div#contenido{
     height: 55%;
-    background-color: #ffff;
+    background-color: #fff8dc;
     border-radius: 0.5em;
     margin: 0.3em;
     font-size: 40px;
