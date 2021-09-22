@@ -46,7 +46,7 @@ header p {
 	width: 700px;
 	font-size: 12px;
 	font-weight: bold;
-	color: #aaa;
+	color: rgb(138, 135, 135);
 	line-height: 18px;
 	overflow: hidden;
 }

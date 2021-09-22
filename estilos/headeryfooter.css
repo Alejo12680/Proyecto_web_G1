@@ -13,7 +13,7 @@ header{
 
 }
 
-.banner{
+.banner_construccion{
     float: right;
     height:100%;
     width: 83%;
@@ -23,7 +23,7 @@ header{
     border-radius: 1em;
     margin-left: .5em;
 }
-@keyframes banner {
+@keyframes .banner_construccion {
     0%, 30%{
         background-image: url(/img/banner1.png);
         opacity: 1;
