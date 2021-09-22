@@ -15,51 +15,59 @@ header{
 
 }
 
+
 .banner_construccion{
-    float: right;
+    float: left;
     height:100%;
-    width: 83%;
+    width: 65%;
     background-size: 100% 100%;
-    animation: banner_construccion 20s infinite;
+    animation: banner_construccion 30s infinite;
     animation-direction: alternate;
     border-radius: 1em;
-    margin-left: .5em;
+    margin-left: 3em;
 }
 @keyframes banner_construccion {
     0%, 17%{
-        background-image: url(/img/banner1.png);
+        background-image: url(/img/plantilla\ banner\ presentacion.png);
         opacity: 1;
     }
     18%, 20%{
         opacity: 0.1;
     }
     21%, 37%{
-        background-image: url(/img/banner2.png);
+        background-image: url(/img/plantilla\ banner\ presentacion2.png);
         opacity: 1;
     }
     38%, 40%{
         opacity: 0.1;
     }
     41%, 57%{
-        background-image: url(/img/banner3.png);
+        background-image: url(/img/plantilla\ banner\ presentacion3.png);
         opacity: 1;
     }
     58%, 60%{
         opacity: 0.1;
     }
     61%, 77%{
-        background-image: url(/img/banner3.png);
+        background-image: url(/img/plantilla\ banner\ presentacion4.png);
         opacity: 1;
     }
     78%, 80%{
         opacity: 0.1;
     }
     81%, 100%{
-        background-image: url(/img/banner3.png);
+        background-image: url(/img/plantilla\ banner\ presentacion5.png);
         opacity: 1;
     }         
 }
+.logo_codeNight{
+    float: right;
+    height: 100%;
+    width: 15%;
+    background-image: url(/img/logoCodeNight.png);
+    background-size: 100% 100%;
 
+}
 footer{
     background: rgb(53, 52, 51);
     border-radius: 1em;

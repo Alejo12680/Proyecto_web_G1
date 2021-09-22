@@ -23,6 +23,7 @@ header{
 
 }
 
+
 .banner{
     float: right;
     height:100%;
@@ -118,6 +119,75 @@ div#section{
     font-family: calibri;
     font-size: 20px;
     text-align: center;
+
+    #container_index01{
+        width: 98%;
+        height: 23%;
+        background-color: rgba(245, 245, 220, 0.705);
+        margin: 0.5em;
+        border-radius: 2em;
+        position: relative;
+        margin-top: 1.5em;
+           
+    }
+    
+    #container2{
+        width: 98%;
+        height: 23%;
+        background-color: rgba(245, 245, 220, 0.705);
+        margin: 0.5em;
+        border-radius: 2em;
+        position: relative;
+           
+    }
+    
+    #container3{
+        width: 98%;
+        height: 23%;
+        background-color: rgba(245, 245, 220, 0.705);
+        margin: 0.5em;
+        border-radius: 2em;
+        position: relative;
+           
+    }
+    
+    #container4{
+        width: 98%;
+        height: 23%;
+        background-color: rgba(245, 245, 220, 0.705);
+        margin: 0.5em;
+        border-radius: 2em;
+        position: relative;
+           
+    }
+    
+    .img{
+        position: absolute;
+        left: -80px;
+        bottom: -85px;
+        width: 400px;
+        height: 400px;
+          
+    }
+    
+    .img:hover{
+        filter: drop-shadow(5px 5px 10px black);
+    }
+    
+    .titulo{
+        position: absolute;
+        left: 8.6em;
+        top: 1em;         
+    }
+    
+    .text{
+        position: absolute;
+        left: 11.8em;
+        top: 5em;
+        padding: 0 1rem;
+        text-align: justify;
+            
+    }
 
 }
 div#aside{
