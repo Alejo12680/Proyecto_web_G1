@@ -1,156 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Novena_G1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="shortcut icon" href="img/icono.png">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/headeryfooter.css">
-    <script type="text/javascript" src="js/calendario.js"></script>
+
+	<meta charset="utf-8" />
+
+	<title>Página 'En construcción'</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+	<!-- IE fix for HTML5 tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- jQuery and Modernizr-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Countdown timer and other animations -->
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/script.js"></script>
+
 </head>
+
 <body>
-    <div id="contenedor">
-        <header>
-            <div class="banner"></div>
-            <div class="logo"></div>
-        </header>
-        <div id="nav">
-            <nav id="menu">
-                <ul>
-                    <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="registro.html">Registro</a></li>
-                    <li><a href="logueo.html">Ingresar</a></li>
-                    <li><a href="restaurantes.html">Gastronomia</a></li>
-                    <li><a href="contactanos.html">Contactanos</a></li>
 
-                </ul>
-            </nav>
-        </div>
-        <div id="contenido">
-            <div id="section1">
-                <div id="calendario">
-                    <div id="anterior" onclick="mesantes()"></div>
-                    <div id="posterior" onclick="mesdespues()"></div>
-                    <h2 id="titulos"></h2>
-                    <table id="diasc">
-                      <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
-                      <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    </table>
-                    <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
-                    <div id="buscafecha">
-                      <form action="#" name="buscar">
-                        <p>Buscar </br> 
-                          <input type="text" name="ss" id="ss" class="c-autocomplete__input sb-searchbox__input sb-destination__input" placeholder="¿Nombre del hotel?" value="" autocomplete="off" data-component="search/destination/input-placeholder" data-sb-id="main" data-input="" aria-autocomplete="both" aria-label="Escribe tu destino"></br> 
-                          <input type="text" name="buscadia" maxlength="2" size="2" /> ... Día</br> 
-                          <select name="buscames">
-                            <option value="0">Enero</option>
-                            <option value="1">Febrero</option>
-                            <option value="2">Marzo</option>
-                            <option value="3">Abril</option>
-                            <option value="4">Mayo</option>
-                            <option value="5">Junio</option>
-                            <option value="6">Julio</option>
-                            <option value="7">Agosto</option>
-                            <option value="8">Septiembre</option>
-                            <option value="9">Octubre</option>
-                            <option value="10">Noviembre</option>
-                            <option value="11">Diciembre</option>
-                          </select>
-                          ... Mes</br> 
-                          <input type="text" name="buscaanno" maxlength="4" size="4" />
-                        ... Año </br> 
-                          <input type="button" value="BUSCAR" onclick="mifecha()" />
-                        </p>
-                      </form>
-                    </div>
-                  </div>
-                <div id="filtro">Filtro</div>
-            </div>
-            <div id="section">Section2
-                <article class="art">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit distinctio exercitationem quod laborum autem? Voluptates atque nemo laboriosam voluptatem ducimus libero iure exercitationem a molestiae fugiat! Exercitationem dolorum illum nostrum!
-                </article>
-                <article class="art">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut recusandae facilis, optio veritatis molestias nobis asperiores tenetur voluptates rerum repellat soluta ipsam, qui autem ex illo voluptatem expedita obcaecati deserunt.
-                </article>
-                <article class="art">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio nisi eaque! Iure vel cumque at minima nam, ea harum atque expedita in placeat ipsa omnis tempora fugiat. Recusandae, natus!</article>
-            </div>
-            <div id="aside">Aside
-                <p id="fabio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum ex quo quisquam incidunt, amet enim tempore assumenda expedita odit quos ea consequatur quasi nihil asperiores nemo numquam ipsa debitis.</p>
-            </div>
-        </div>
-        <footer>
-          <div class="containerFooter">
-              <div class="colum1">
-                  <h1>Mas información de la Empresa</h1>
-                  <p>Esta compañia se dedica a reunir los mejores hoteles y restaurantes de Bucaramanga, en un conjunto de opciones faciles para el alcance de nuestros usarios.</p>
-                  
-              </div>
+	<header>
+		<h1>Estamos trabajando para tener listo el sitio web pronto.</h1>
+		<p>Nuestros desarrolladores inmaculados Alejandro Ramirez, Natalia Lugo, Johana Hernandez, Andres Galvez y Fabio Orrego están haciendo su mayor esfuerzo para finalizar el sitio web antes que este conteo termine. Favor, tener paciencia. (Es mentira lo de inmaculados, los tenemos amarrados a una mazmorra y los azotamos para que trabajen 20 horas al día).</p>
+	</header>
 
-              <div class="colum2">
-                  <h1>Redes Sociales</h1>
+	<div id="main">
+		<div id="links">
+			<div class="home"><a href="">http://1stwebdesigner.com/</a></div>
+			<div class="support"><a href="">http://support.1wd.com/</a></div>
+			<div class="browser"><a href="">Google Chrome OS. 10.X.23</a></div>
+			<div class="books"><a href="">http://1wd.co/e-books/</a></div>
+			<div class="download"><a href="">http://1wd.com/download/</a></div>
+			<div class="ups"><a href="">UPS Signed Worldwide</a></div>
+		</div>
 
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-facebook"></i></a>
-                      <p>Siguenos en Facebook</p>
-                  </div>
+		<div id="counter"></div>
 
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
-                      <p>Siguenos en Instegram</p>
-                  </div>
+		<form action="" method="get">
+			<input type="text" class="email" placeholder="Escriba su e-mail en este campo" required />
+			<input type="submit" class="submit" value="Mantenerme al tanto" />
+		</form>
 
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-whatsapp"></i></a>
-                      <p>Siguenos en Whatsapp</p>
-                  </div>
+		<div class="social-media-arrow"></div>
 
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
-                      <p>Siguenos en Twitter</p>
-                  </div>
-                  
-              </div>
-              <div class="colum3">
-                  <h1>Información Contactos</h1>
-
-                  <div class="row2">
-                      <i class="fas fa-mail-bulk"></i>
-                      <p>lanovena09@gmail.com</p>                        
-                  </div>
-
-                  <div class="row2">
-                      <i class="fas fa-globe-americas"></i>
-                      <p>Bucaramanga-Colombia Av. 42 # 48-11</p>                        
-                  </div>
-
-                  <div class="row2">
-                      <i class="fas fa-phone"></i>
-                      <p>+01-607-9037891</p>                        
-                  </div>
-
-              </div>		
-          </div>
-          <div class="containerFinal">
-
-              <div class="copyringht">
-                  Derechos de Autor Reservados &#9426 2021 Hoteleria La Novena  
-              </div>
-
-              <div class="informacion">
-                  Información | Privacidad y politica | Terminos y Condiciones
-              </div>
-
-          </div>
-      </footer>       
-    </div>
+		<footer>
+			<ul>
+				<li><a class="digg" href=""></a></li>
+				<li><a class="twitter" href=""></a></li>
+				<li><a class="vimeo" href=""></a></li>
+				<li><a class="skype" href=""></a></li>
+			</ul>
+		</footer>
+	</div>
+	
+	
 </body>
+
 </html>
