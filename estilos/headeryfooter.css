@@ -3,6 +3,8 @@ header{
     border-radius: 0.5em; 
     border-color: #000;
     margin: 0.3em;
+    
+
 }
 .logo{
     float: left;
@@ -18,12 +20,12 @@ header{
     height:100%;
     width: 83%;
     background-size: 100% 100%;
-    animation: banner 10s infinite;
+    animation: banner_construccion 10s infinite;
     animation-direction: alternate;
     border-radius: 1em;
     margin-left: .5em;
 }
-@keyframes .banner_construccion {
+@keyframes banner_construccion {
     0%, 30%{
         background-image: url(/img/banner1.png);
         opacity: 1;
