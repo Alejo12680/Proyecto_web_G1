@@ -108,11 +108,16 @@ div#section1{
     font-size: 40px;
     text-align: center;
 }
+
+.img {
+    border-radius: 0.5em;
+}
+
 div#section{
     float: left;
     height: 100%;
     width: 52%;
-    background-color: #ebe5e1;
+    background-color: #fff8dc;
     border-radius: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
