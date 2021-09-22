@@ -20,30 +20,44 @@ header{
     height:100%;
     width: 83%;
     background-size: 100% 100%;
-    animation: banner_construccion 10s infinite;
+    animation: banner_construccion 20s infinite;
     animation-direction: alternate;
     border-radius: 1em;
     margin-left: .5em;
 }
 @keyframes banner_construccion {
-    0%, 30%{
+    0%, 17%{
         background-image: url(/img/banner1.png);
         opacity: 1;
     }
-    31%, 34%{
+    18%, 20%{
         opacity: 0.1;
     }
-    35%, 65%{
+    21%, 37%{
         background-image: url(/img/banner2.png);
         opacity: 1;
     }
-    66%, 69%{
+    38%, 40%{
         opacity: 0.1;
     }
-    70%, 100%{
+    41%, 57%{
         background-image: url(/img/banner3.png);
         opacity: 1;
-    }            
+    }
+    58%, 60%{
+        opacity: 0.1;
+    }
+    61%, 77%{
+        background-image: url(/img/banner3.png);
+        opacity: 1;
+    }
+    78%, 80%{
+        opacity: 0.1;
+    }
+    81%, 100%{
+        background-image: url(/img/banner3.png);
+        opacity: 1;
+    }         
 }
 
 footer{

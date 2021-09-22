@@ -3,78 +3,67 @@
     padding: 0;
 }
 div#contenedor{
-    width: 75%; height: 2000px;
+    width: 90%; height: 2000px;
     background-color: #fff8dc;
     margin: 0.5em auto; padding: 0.5em;
     font-family:Arial, Helvetica, sans-serif;
 	background: url(../images/main-content-pattern.jpg) top left repeat;
 }
 
-h1 {
-	font-size: 50px;
+#container1 h1 {
+	font-size: 70px;
 	font-weight: bold;
 	color: #272727;
 	text-shadow: 0 1px 0 #fff;
 }
 
-p {
+#container1 p {
 	margin: 20px 0 0 3px;
-	font-size: 18px;
+	font-size: 30px;
 	color: #272727;
 }
-
-
 
 /* ---- Main Area ---- */
 
 #main {
 	position: relative;
-	width: 900px;
-	margin: 50px auto 0 auto;
+	width: 70%;
+	margin: 50px auto 30px auto;
 	padding: 20px 0 0 25px;
 	background: url(../images/main-content-pattern.jpg) top left repeat;
+	text-align: center;
 }
-
-
 
 /* ---- Links ---- */
 
 #links {
 	width: 900px;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: bold;
-	color: rgb(138, 135, 135);
+	color: rgb(94, 91, 91);
 	line-height: 18px;
 	overflow: hidden;
 }
 
 #links a {
 	position: relative;
-	color: #aaa;
+	color: rgb(94, 91, 91);
 	text-decoration: none;
 }
 
 #links a:hover {
-	color: #aaa;
+	color: rgb(39, 37, 37);
 	text-decoration: none;
 }
 
-.home, .support, .browser, .books, .download, .ups {
+.home{
 	float: left;
-	width: 180px;
+	width: 480px;
 	margin-left: 42px;
 	padding-left: 25px;
 }
 
 .home { background: url(../images/home.png) left center no-repeat; margin-left: 0; }
-.support { background: url(../images/support.png) left center no-repeat; }
-.browser { background: url(../images/browser.png) left center no-repeat; clear: right; }
-
-.books, .download, .ups { margin-top: 10px; }
-
-.books { background: url(../images/books.png) left center no-repeat; margin-left: 0; }
-.download { background: url(../images/download.png) left center no-repeat; }
-.ups { background: url(../images/ups.png) left center no-repeat; clear: right; }
 
 
 
@@ -82,7 +71,7 @@ p {
 
 #counter {
 	width: 900px;
-	height: 145px;
+	height: 175px;
 	margin: 55px auto 0 auto;
 	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
 	font-size: 92px;
