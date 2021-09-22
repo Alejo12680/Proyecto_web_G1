@@ -196,9 +196,9 @@ div#aside{
     background-color: slategrey;
     border-radius: 0.5em;
     float:right;
-    font-size: 40px;
+    font-size: 43px;
     color: black;
-    text-align: center;  
+    text-align: center;
 }
 .art{
     width: 98%;
@@ -207,11 +207,6 @@ div#aside{
     margin: 0.3em;
     align-content: center;
     border-radius: 0.5em;
-}
-
-#fabio{
-    color: black;
-    font-size: 20px;
 }
 
 #calendar{
@@ -345,4 +340,9 @@ div#aside{
     color: blue; text-decoration: underline;
 }
 #titulos {font: normal 15pt "arial black"; padding: 0.2em;
+}
+#maps{
+    margin: 0%;
+    margin-top: 0.5em;
+    border-radius: 5em;
 }

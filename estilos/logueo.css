@@ -111,8 +111,10 @@ div#section1{
     font-style: italic;
 }
 #titulo{
-    font-style: normal;
-    
+    font-style: normal;    
+}
+.img {
+    border-radius: 0.5em;
 }
 div#section{
     float: left;
@@ -125,7 +127,6 @@ div#section{
     font-family: calibri;
     font-size: 20px;
     text-align: center;
-
 }
 div#aside{
     height: 100%;

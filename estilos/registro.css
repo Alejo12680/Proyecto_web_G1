@@ -107,24 +107,26 @@ div#section1{
     border-radius: 0.5em;
     font-size: 40px;
     text-align: center;
+    color: rgb(42, 77, 173);
+    font-style: italic;
 }
-
+#titulo{
+    font-style: normal;    
+}
 .img {
     border-radius: 0.5em;
 }
-
 div#section{
     float: left;
     height: 100%;
     width: 52%;
-    background-color: #fff8dc;
+    background-color: #ebe5e1;
     border-radius: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     font-family: calibri;
     font-size: 20px;
     text-align: center;
-
 }
 div#aside{
     height: 100%;
@@ -134,11 +136,7 @@ div#aside{
     float:right;
     font-size: 43px;
     color: black;
-    text-align: center;  
-}
-#fabio{
-    color: black;
-    font-size: 20px;
+    text-align: center;
 }
 .art{
     width: 98%;
@@ -148,14 +146,6 @@ div#aside{
     align-content: center;
     border-radius: 0.5em;
 }
-
-#calendar{
-    width: 100%;
-    height: 50%;
-    background-color: rgb(227, 236, 236);
-    font-size: 25px;
-}
-
 .form-contacto{
     width: 80%;
     background-color: rgb(220, 222, 226);
@@ -204,4 +194,9 @@ div#aside{
     margin-bottom: 16px;
     margin: 16px 0;
     font-size: 22px;
+}
+#maps{
+    margin: 0%;
+    margin-top: 0.5em;
+    border-radius: 5em;
 }
