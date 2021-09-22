@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/logueo.css">
     <link rel="shortcut icon" href="img/icono.png">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v3"></script>
     <title>Inicio de Sesion</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="estilos/headeryfooter.css">
 </head>
 <body>
     <div id="contenedor">
@@ -29,11 +28,24 @@
             </nav>
         </div>
         <div id="contenido">
-            <div id="section1">section1
-                <div id="calendar"></div>
-                <div id="filtro">filter</div>
+            <div id="section1"> 
+                <p id="titulo">Sitios de interés</p>
+                <div id="container1">  </br>
+                    <h6>Páramo de Santurban</h6>
+                    <a href="https://www.bucaramanga.com/articulo/los-diez-lugares-sorprendentes-de-santander.html" target="_blank"><img class="img" src="img/santurban.jpg" height="200px" width="200px" alt="santurban"></a>
+                </div></br>
+
+                <div id="container2">  
+                    <h6>Barichara</h6>
+                    <a href="https://blog.redbus.co/turismo-y-aventura/top-5-lugares-turisticos-de-bucaramanga/" target="_blank"><img class="img" src="img/barichara.jpg" height="200px" width="200px" alt="barichara"></a>
+                </div></br>
+
+                <div id="container3">  
+                    <h6>Las Gachas</h6>
+                    <a href="https://www.vivex.com.co/que-hacer-en-bucaramanga-10-planes/" target="_blank"><img class="img" src="img/gachas.JPG" height="200px" width="200px" alt="gachas"></a>
+                </div>
             </div>
-            <div id="section">Section2
+            <div id="section">
                 <section class="form-contacto">
                     <form >
                         <fieldset>
@@ -43,7 +55,19 @@
                        
                         <input class="control" type="text" name="passw" id="passw" placeholder="Cree su contraseña"style="height: 50px"></textarea><br/>
                         <p> </p>
-                        <input class="boton2" type="submit" value="Iniciar"><br/>
+                        <div>
+                            <input class="boton2" type="submit" onclick="location.href='#openModal'" value="Iniciar"><br/>
+                            <div id="openModal" class="modalDialog">
+                                <div>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h2>Configuración de usuario</h2><br/>
+                                    <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese contraseña actual" style="height: 50px"></textarea><br/>
+                                    <input class="control" type="text" name="passw" id="passw" placeholder="Cree contraseña nueva"style="height: 50px"></textarea><br/>
+                                    <input class="boton2" type="submit" value="Guardar"><br/>
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </div>
                     </form>  
                         <p>¿Todavía no tienes una cuenta?</p>
                     
@@ -51,74 +75,16 @@
                         </fieldset>           
                 </section>
             </div>
-            <div id="aside">Aside
+            <div id="aside"></hr>
                 <p id="fabio"></p>
+                <div id="maps">
+                    <p> </p></br></br></br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3959.0822473439393!2d-73.10759518522597!3d7.116467294860993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sco!4v1632289219270!5m2!1ses!2sco" width="310" height="600" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>                    
+                </div>
             </div>
         </div>
-        <footer>
-            <div class="containerFooter">
-                <div class="colum1">
-                    <h1>Mas información de la Empresa</h1>
-                    <p>Esta compañia se dedica a reunir los mejores hoteles y restaurantes de Bucaramanga, en un conjunto de opciones faciles para el alcance de nuestros usarios.</p>
-                    
-                </div>
-  
-                <div class="colum2">
-                    <h1>Redes Sociales</h1>
-  
-                    <div class="row">
-                        <a href="#"><i class="fab fa-fw fa-facebook"></i></a>
-                        <p>Siguenos en Facebook</p>
-                    </div>
-  
-                    <div class="row">
-                        <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
-                        <p>Siguenos en Instegram</p>
-                    </div>
-  
-                    <div class="row">
-                        <a href="#"><i class="fab fa-fw fa-whatsapp"></i></a>
-                        <p>Siguenos en Whatsapp</p>
-                    </div>
-  
-                    <div class="row">
-                        <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
-                        <p>Siguenos en Twitter</p>
-                    </div>
-                    
-                </div>
-                <div class="colum3">
-                    <h1>Información Contactos</h1>
-  
-                    <div class="row2">
-                        <i class="fas fa-mail-bulk"></i>
-                        <p>lanovena09@gmail.com</p>                        
-                    </div>
-  
-                    <div class="row2">
-                        <i class="fas fa-globe-americas"></i>
-                        <p>Bucaramanga-Colombia Av. 42 # 48-11</p>                        
-                    </div>
-  
-                    <div class="row2">
-                        <i class="fas fa-phone"></i>
-                        <p>+01-607-9037891</p>                        
-                    </div>
-  
-                </div>		
-            </div>
-            <div class="containerFinal">
-  
-                <div class="copyringht">
-                    Derechos de Autor Reservados &#9426 2021 Hoteleria La Novena  
-                </div>
-  
-                <div class="informacion">
-                    Información | Privacidad y politica | Terminos y Condiciones
-                </div>
-  
-            </div>
-        </footer>       
+        <div id="footer">Footer</div>
     </div>
 </body>
 </html>
+            
