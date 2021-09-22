@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/registro.css">
+    <link rel="stylesheet" href="estilos/contacto.css">
     <link rel="shortcut icon" href="img/icono.png">
     <title>Registrate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -29,36 +29,29 @@
             </nav>
         </div>
         <div id="contenido">
-            <div id="section1">section1
-                <div id="calendar"></div>
-                <div id="filtro">filter</div>
-            </div>
-            <div id="section">Section2
+            <div id="section">
                 <section class="form-contacto">
                   <form action="../form-result.php" target="_blank">
                     <fieldset>
-                        <legend>¿Tienes alguna duda?</legend> 
+                        <legend> ¿Tienes alguna duda?</legend> 
                         <p><label>Escribenos tus dudas</label></p>
-                        <p><label>Tu Nombre: <input type="text" name="nombre"></label></p>
-                        <p><label>Tu dirección de correo: <input type="text" name="direccion"></label></p>
+                        <p><label>Tu Nombre: <input class="control" type="text" name="nombre" placeholder="Ingrese su nombre"></label></p>
+                        <p><label>Tu dirección de correo: <input class="control" type="text" name="direccion" placeholder="Ingrese su direccion"></label></p>
                         <p><label>
-                            Enviar Mensaje: <input type="text" name="mensaje" value=""></p>
+                            Enviar Mensaje: <input class="control" type="text" name="mensaje" value=""></p>
                         </label>
                     </fieldset>
   
                     <p>
-                      <input type="reset" value="Reiniciar Formulario">
-                      <input type="reset" value="Enviar Mensaje">
+                      <input class="boton3" type="reset" value="Reiniciar Formulario">
+                      <input class="boton4" type="reset" value="Enviar Mensaje">
                   </p>              
                         </fieldset>           
                 </section>
             </div>
-            <div id="aside">Aside
-                <p id="fabio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum ex quo quisquam incidunt, amet enim tempore assumenda expedita odit quos ea consequatur quasi nihil asperiores nemo numquam ipsa debitis.</p>
             </div>
-        </div>
         <footer>
-            <div class="containerFooter">
+            <div class="containerFooter" style="position:absolute;">
                 <div class="colum1">
                     <h1>Mas información de la Empresa</h1>
                     <p>Esta compañia se dedica a reunir los mejores hoteles y restaurantes de Bucaramanga, en un conjunto de opciones faciles para el alcance de nuestros usarios.</p>

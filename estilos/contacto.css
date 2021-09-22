@@ -9,6 +9,7 @@ div#contenedor{
     margin: 0.5em auto;
     padding: 0.5em;
     font-family: "calibri";
+    
 }
 header{
     height: 12%;
@@ -99,26 +100,10 @@ div#footer{
     font-size: 40px;
     text-align: center;
 }
-div#section1{
-    float: left;
-    height: 100%;
-    width: 20%;
-    background-color: #a4a4a4a4;
-    border-radius: 0.5em;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(42, 77, 173);
-    font-style: italic;
-}
-#titulo{
-    font-style: normal;
-    
-}
 div#section{
-    float: left;
     height: 100%;
-    width: 52%;
-    background-color: #ebe5e1;
+    width: 98%;
+    background-color: rgb(220, 222, 226);
     border-radius: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -127,34 +112,17 @@ div#section{
     text-align: center;
 
 }
-div#aside{
-    height: 100%;
-    width: 25%;
-    background-color: slategrey;
-    border-radius: 0.5em;
-    float:right;
-    font-size: 43px;
-    color: black;
-    text-align: center;
-}
 .art{
     width: 98%;
     height: 30%;
-    background-color: beige;
+    background-color:  rgb(220, 222, 226);
     margin: 0.3em;
     align-content: center;
     border-radius: 0.5em;
 }
 
-#calendar{
-    width: 100%;
-    height: 50%;
-    background-color: rgb(227, 236, 236);
-    font-size: 25px;
-}
-
 .form-contacto{
-    width: 80%;
+    width: 48%;
     background-color: rgb(220, 222, 226);
     padding: 30px;
     margin: auto;
@@ -178,13 +146,16 @@ div#aside{
 .form-contacto p{
     height: 40px;
     width: 20;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 18px;
+    border-radius: 15%;
+    padding: 15px;
     border-bottom: 4px;
-    margin-bottom: 16px;
-    line-height: 40px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align:left;
 }
 .form-contacto select{
+    text-align: justify;
     height: 40px;
     width: 20%;
     font-size: 15px;
@@ -192,72 +163,25 @@ div#aside{
     border-bottom: 4px;
     margin-bottom: 16px;
 }
-.form-contacto .boton2{
+.form-contacto .boton3{
     width: 49%;
     background-color: #1f53c5;
     border: none;
     padding: 12px;
     color: white;
     margin-bottom: 16px;
-    margin: 16px 0;
-    font-size: 22px;
+    margin: 10px 0;
+    font-size: 20px;
 }
-.modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-  -webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
-}
-.close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-.close:hover { background: #00d9ff; }
-#maps{
-    margin: 0%;
-    margin-top: 0.5em;
-    border-radius: 5em;
+.form-contacto .boton4{
+    width: 49%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin-bottom: 16px;
+    margin: 10px 0;
+    font-size: 20px;
 }
 footer{
     background: rgb(53, 52, 51);
