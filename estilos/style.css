@@ -115,7 +115,7 @@ div#section{
     text-align: center;
     }
 
-    #container_index01{
+    #container{
         width: 98%;
         height: 23%;
         background-color: rgba(245, 245, 220, 0.705);
@@ -157,10 +157,9 @@ div#section{
     
     .img{
         position: absolute;
-        left: -80px;
-        bottom: -80px;
-        width: 200px;
-        height: 200px;
+        left: 30px;
+        bottom: 30px;
+        border-radius: 2em;
           
     }
     
@@ -182,6 +181,46 @@ div#section{
         text-align: justify;
             
     }
+
+    .form {
+        position: absolute;
+        left: 9.8em;
+        top: 3.1em;    
+        width: 250px;
+        margin: 0 auto;
+        height: 50px;
+        
+      }
+      
+      .form p {
+        text-align: center;
+      }
+      
+      .form label {
+        font-size: 27px;
+      }
+      
+      input[type="radio"] {
+        display: none;
+      }
+      
+      label {
+        color: rgba(128, 128, 128, 0.692);
+      }
+      
+      .clasificacion {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
+      
+      label:hover,
+      label:hover ~ label {
+        color: black;
+      }
+      
+      input[type="radio"]:checked ~ label {
+        color: darkorange;
+      }
 
 
 div#aside{
