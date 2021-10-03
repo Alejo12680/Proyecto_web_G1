@@ -91,14 +91,7 @@ div#contenido{
     font-size: 40px;
     text-align: center;
 }
-div#footer{
-    height: 15%;
-    background-color: rgb(75, 74, 72);
-    border-radius: 0.5em;
-    margin: 0.3em;
-    font-size: 16px; color: rgb(167, 166, 165);
-       
-}
+
 div#section1{
     float: left;
     height: 100%;
@@ -108,6 +101,7 @@ div#section1{
     font-size: 40px;
     text-align: center;
 }
+
 div#section{
     float: left;
     height: 100%;
@@ -119,6 +113,8 @@ div#section{
     font-family: calibri;
     font-size: 20px;
     text-align: center;
+
+    }
 
     #container_index01{
         width: 98%;
@@ -165,8 +161,8 @@ div#section{
         position: absolute;
         left: -80px;
         bottom: -85px;
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
           
     }
     
@@ -189,7 +185,7 @@ div#section{
             
     }
 
-}
+
 div#aside{
     height: 100%;
     width: 25%;
@@ -314,8 +310,7 @@ div#aside{
     color: white; padding: 5px
 }
 #buscafecha select, #buscafecha input  {
-    background-color: ##buscafecha {
-        background-color: #565fad; color: #050505; padding: 5px}; 
+    color: #050505; padding: 5px; 
     color: #565fad; font: bold 10pt arial;
 }
 #buscafecha [type=text]  {
