@@ -109,13 +109,7 @@ div#section{
     font-size: 20px;
     
 }
-/*
-.form-contacto h3{
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    
-}*/
+
 .control{
     width: 90%;
     padding: 10px;
@@ -167,72 +161,10 @@ div#section{
 }
 
 
-
-
-  /*.container .item {
-      border: none;
-      margin-bottom: 50px;
-      background: none;
-  }
-
-  .t-p{
-    color: rgb(193 206 216);
-    padding: 40px 30px 0px 30px;
-  }
-
-  .container .item .item-header h2 button.btn.btn-link {
-      background: #333435;
-      color: white;
-      border-radius: 0px;
-      font-family: 'Poppins';
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 2.5;
-      text-decoration: none;
-  }
-  .container .item .item-header {
-      border-bottom: none;
-      background: transparent;
-      padding: 0px;
-      margin: 2px;
-  }
-  
-  .container .item .item-header h2 button {
-      color: white;
-      font-size: 20px;
-      padding: 15px;
-      display: block;
-      width: 100%;
-      text-align: left;
-  }
-  
-  .container .item .item-header h2 i {
-      float: right;
-      font-size: 30px;
-      color: #eca300;
-      background-color: black;
-      width: 60px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-  }
-  
-  button.btn.btn-link.collapsed i {
-      transform: rotate(0deg);
-  }
-  
-  button.btn.btn-link i {
-      transform: rotate(180deg);
-      transition: 0.5s;
-  }
-
-*/
   .container {
     width: 55%;
     margin: auto;
-    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.5);
     
   
   }
@@ -240,7 +172,7 @@ div#section{
     overflow: hidden;
     max-height: 0;
     text-align: justify;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Calibri", Courier, monospace;
     background: #e4e4e4;
     transition: all 0.2s ease-in;
   }
@@ -250,8 +182,8 @@ div#section{
     display: block;
     text-align: center;
     padding: 10px;
-    font-family: "Courier New", Courier, monospace;
-    background-color: #212121;
+    font-family: "Calibri", Courier, monospace;
+    background-color: #052d53;
     border-bottom: 2px solid gray;
     color: white;
   }
