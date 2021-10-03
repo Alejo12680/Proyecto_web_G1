@@ -155,7 +155,23 @@ div#section{
         position: relative;
            
     }
-    
+
+    #container:hover{
+        filter: contrast(130%);
+    }
+
+    #container2:hover{
+        filter: contrast(130%);
+    }
+
+    #container3:hover{
+        filter: contrast(130%);
+    }
+
+    #container4:hover{
+        filter: contrast(130%);
+    }
+
     .img{
         position: absolute;
         left: 30px;
