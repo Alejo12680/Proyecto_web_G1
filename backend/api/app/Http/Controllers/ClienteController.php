@@ -43,9 +43,15 @@ class ClienteController extends Controller
     // }
 
     public function update(Request $request){
-        $data = $request->all();
-        $update= Cliente::where('doc', '1127')->update($data)!=0;
-        return array('update'=>$update);
+        // $data = $request->all();
+        // $update= Cliente::where('doc', '1127')->update($data)!=0;
+        // return array('update'=>$update);
+
+        return ($request->bearerToken());
+       $data = $request->all();
+       $updated = Cliente::where('doc', '398')->update($data) != 0;
+       $token = JWTAuth::getToken();
+       return array('updated' => $updated,'token'=>$token);
 
         // $data = $request->all();
         // return Cliente::where('doc', '1127')->update($data);
