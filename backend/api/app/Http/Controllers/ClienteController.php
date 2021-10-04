@@ -4,11 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cliente;
+use Illuminate\Support\Facades\Hash;
+use JWTAuth;
 
 class ClienteController extends Controller
 {
     public function signup(Request $request){
-        Cliente::create($request->all());
+        $data = $request->all();
+        $data['clave'] = Hash::make($data['clave']);
+        $cliente = Cliente::create($data);
+        $token = JWTAuth::fromUser($cliente);
+        return array('token' => $token);
+        // Cliente::create($request->all());
     }
 
     public function login(Request $request){
@@ -16,7 +23,12 @@ class ClienteController extends Controller
         // $clave =$request->input('clave');
         // $cliente=Cliente::select('clave')->where('correo',$correo)->first();
         // // return $cliente->clave==$clave;
-        // $res=array(  $credentials = $request->all();
+        // $res=array(  
+             //     "validado"=> $cliente->clave==$clave
+        // );
+        // return $res;
+        
+        $credentials = $request->all();
         $cliente = Cliente::where('correo', $credentials['correo'])->first();
         if(Hash::check($credentials['clave'], $cliente['clave'])){
             $token = JWTAuth::fromUser($cliente);
@@ -24,10 +36,7 @@ class ClienteController extends Controller
             return response()->json(['error' => 'credenciales invalidas..'], 400);
         }
         return array('token' => $token);
-        //     "validado"=> $cliente->clave==$clave
-        // );
-        // return $res;
-      
+       
 
     }
 
