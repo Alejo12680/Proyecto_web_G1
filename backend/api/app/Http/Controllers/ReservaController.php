@@ -28,5 +28,13 @@ class ReservaController extends Controller
         return array('created' => $created);
     }
 
+    public function showByCliente(Request $request){
+
+        $token = $request->bearerToken();
+        $doc = JWTAuth::getPayload($token)->toArray()['sub'];
+        $history = Reserva::where('doc_cliente', $doc)->get();
+        return $history;
+
+    }
 }
 
