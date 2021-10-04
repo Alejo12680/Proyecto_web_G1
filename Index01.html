@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Novena_G1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="estilos/headeryfooter.css">
-    <link rel="shortcut icon" href="img/icono.png">
-    <link rel="stylesheet" href="estilos/style.css">
-    <script type="text/javascript" src="js/calendario.js"></script>
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>La Novena_G1</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+      <link rel="stylesheet" href="estilos/style.css">
+      <link rel="shortcut icon" href="img/icono.png">
+      <script type="text/javascript" src="js/calendario.js"></script>
+  </head>
+  <body>
     <div id="contenedor">
-        <header>
-            <div class="banner"></div>
-            <div class="logo"></div>
+      <header class="header">
+        <div class="logo"></div>
+        <div class="banner"></div>
+          <nav id="menu">
+            <a href="Index.html">Inicio</a>
+            <a href="registro.html">Registro</a>
+            <a href="logueo.html">Ingresar</a>
+            <a href="restaurantes.html">Gastronomia</a>
+            <a href="contactanos.html">Contactanos</a>
+          </nav>
         </header>
-        <div id="nav">
-            <nav id="menu">
-                <ul>
-                    <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="registro.html">Registro</a></li>
-                    <li><a href="logueo.html">Ingresar</a></li>
-                    <li><a href="restaurantes.html">Gastronomia</a></li>
-                    <li><a href="contactanos.html">Contactanos</a></li>
 
-                </ul>
-            </nav>
-        </div>
-        <div id="contenido">
-            <div id="section1">
-                <div id="calendario">
-                    <div id="anterior" onclick="mesantes()"></div>
-                    <div id="posterior" onclick="mesdespues()"></div>
+          
+            <main id="section1">
+              <div id="calendario">
+                  <div id="anterior" onclick="mesantes()"></div>
+                  <div id="posterior" onclick="mesdespues()"></div>
                     <h2 id="titulos"></h2>
-                    <table id="diasc">
-                      <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
-                      <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    </table>
-                    <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
-                    <div id="buscafecha">
-                      <form action="#" name="buscar">
-                        <p>Buscar </br> 
-                          <input type="text" name="ss" id="ss" class="c-autocomplete__input sb-searchbox__input sb-destination__input" placeholder="¿Nombre del hotel?" value="" autocomplete="off" data-component="search/destination/input-placeholder" data-sb-id="main" data-input="" aria-autocomplete="both" aria-label="Escribe tu destino"></br> 
-                          <input type="text" name="buscadia" maxlength="2" size="2" /> ... Día</br> 
-                          <select name="buscames">
-                            <option value="0">Enero</option>
-                            <option value="1">Febrero</option>
-                            <option value="2">Marzo</option>
-                            <option value="3">Abril</option>
-                            <option value="4">Mayo</option>
-                            <option value="5">Junio</option>
-                            <option value="6">Julio</option>
-                            <option value="7">Agosto</option>
-                            <option value="8">Septiembre</option>
-                            <option value="9">Octubre</option>
-                            <option value="10">Noviembre</option>
-                            <option value="11">Diciembre</option>
-                          </select>
-                          ... Mes</br> 
-                          <input type="text" name="buscaanno" maxlength="4" size="4" />
-                        ... Año </br> 
-                          <input type="button" value="BUSCAR" onclick="mifecha()" />
-                        </p>
-                      </form>
-                    </div>
-                  </div>
-                <div id="filtro">Filtro</div>
-            </div>
-            <div id="section">
-                <div class="container">                 
-                        
+                      <table id="diasc">
+                        <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                      </table>
+                      <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
+                      <div id="buscafecha">
+                        <form action="#" name="buscar">
+                          <p>Buscar </br> 
+                            <input type="text" name="ss" id="ss" class="c-autocomplete__input sb-searchbox__input sb-destination__input" placeholder="¿Nombre del hotel?" value="" autocomplete="off" data-component="search/destination/input-placeholder" data-sb-id="main" data-input="" aria-autocomplete="both" aria-label="Escribe tu destino"></br> 
+                            <input type="text" name="buscadia" maxlength="2" size="2" /> ... Día</br> 
+                            <select name="buscames">
+                              <option value="0">Enero</option>
+                              <option value="1">Febrero</option>
+                              <option value="2">Marzo</option>
+                              <option value="3">Abril</option>
+                              <option value="4">Mayo</option>
+                              <option value="5">Junio</option>
+                              <option value="6">Julio</option>
+                              <option value="7">Agosto</option>
+                              <option value="8">Septiembre</option>
+                              <option value="9">Octubre</option>
+                              <option value="10">Noviembre</option>
+                              <option value="11">Diciembre</option>
+                            </select>
+                            ... Mes</br> 
+                            <input type="text" name="buscaanno" maxlength="4" size="4" />
+                          ... Año </br> 
+                            <input type="button" value="BUSCAR" onclick="mifecha()" />
+                          </p>
+                        </form>
+                      </div>
+                  <div id="filtro">Filtro</div>
+              </div>
+            </main>
+
+              <main class="section">
+                <article class="articulo">
+                  <div class="contenedor-thumbnail">
                     <a href="https://www.sonesta.com/es/co/santander/bucaramanga/sonesta-hotel-bucaramanga" target="_blank"><img class="img" src="img/sonesta.png" height="200px" width="200px" alt="logo del hotel"></a>
-                    
-                    <h2 class="titulo">Hotel Sonesta</h2>
-                    <p class="text"><b> El Sonesta Hotel Bucaramanga ofrece WiFi gratuita en todas sus instalaciones y se encuentra en Floridablanca, a 5 km de Bucaramanga. Hermoso hotel, confortables habitaciones con un excelente desayuno para empezar el día.</b></p>
-                    
-                    <form class="form">
+                  </div>
+                  <div class="contenedor-texto">
+                    <div>
+                      <h2 class="titulo">Hotel Sonesta</h2>
+                      <form class="form">
                         <p class="clasificacion">
                           <input id="radio1" type="radio" name="estrellas" value="5">
                             <label for="radio1">★</label>
@@ -95,170 +92,123 @@
                           <input id="radio5" type="radio" name="estrellas" value="1">
                             <label for="radio5">★</label>
                         </p>
-                    </form>
-
-                    <div class="costo">
-                        <p>Precio por noche</p>
-                        <b>COP 229.500</b>
+                      </form>
                     </div>
-                    
-                </div>
-                <div class="container"> 
-                    
-                    <a href="https://hotelbgabucaramanga.com/" target="_blank"><img class="img" src="img/hotelBGA.jpg" height="200px" width="200px" alt="logo de hotel"></a>
-                    
-                    <h2 class="titulo">Hotel BGA</h2>
-                    <p class="text"><b> El Santander BGA Hotel boutique ofrece un restaurante y habitaciones con conexión WiFi gratuito. El centro de la ciudad de Bucaramanga se encuentra a 18 minutos a pie. Cerca de Centro Comercial Cuarta Etapa y Quinta Etapa.</b></p>
+                    <p class="extracto">
+                      <b>El Sonesta Hotel Bucaramanga ofrece WiFi gratuita en todas sus instalaciones y se encuentra en Floridablanca, a 5 km de Bucaramanga. Hermoso hotel, confortables habitaciones con un excelente desayuno para empezar el día.</b>
+                    </p>
+                    <a href="https://www.sonesta.com/es/co/santander/bucaramanga/sonesta-hotel-bucaramanga" class="btn-link">Leer más</a>
+                  </div>
+                  <div class="contenedor_costo">
+                    <p>Precio por noche</p>
+                    <b>COP 172.000</b>
+                  </div>
+                </article>
 
-                    <form class="form">
-                        <p class="clasificacion">
-                          <input id="radio6" type="radio" name="estrellas" value="5">
-                            <label for="radio6">★</label>
-                          <input id="radio7" type="radio" name="estrellas" value="4">
-                            <label for="radio7">★</label>
-                          <input id="radio8" type="radio" name="estrellas" value="3">
-                            <label for="radio8">★</label>
-                          <input id="radio9" type="radio" name="estrellas" value="2">
-                            <label for="radio9">★</label>
-                          <input id="radio10" type="radio" name="estrellas" value="1">
-                            <label for="radio10">★</label>
-                        </p>
-                    </form>
-
-                    <div class="costo">
-                        <p>Precio por noche</p>
-                        <b>COP 135.000</b>
-                    </div>
-                
-                </div>
-                <div class="container">
-                                          
+                <article class="articulo">
+                  <div class="contenedor-thumbnail">
                     <a href="http://buena-vista.hoteles-santander.com/es/" target="_blank"><img class="img" src="/img/buenaVista.jpg" height="200px" width="200px" alt="logo de hotel"></a>
-                    
-                    <h2 class="titulo">Hotel Buena Vista</h2>
-                    <p class="text"><b>El Hotel Buena Vista Express ofrece conexión Wi-Fi gratuita y un desayuno bufé en Bucaramanga. También cuenta con piscina al aire libre y alberga un restaurante. Habitación amplia y cómoda, Baño excelente. Un desayuno estupendo en la terraza con una vista muy agradable de la ciudad.</b></p>
-
-                    <form class="form">
+                  </div>
+                  <div class="contenedor-texto">
+                    <div>
+                      <h2 class="titulo">Hotel Buena Vista</h2>
+                      <form class="form">
                         <p class="clasificacion">
-                          <input id="radio11" type="radio" name="estrellas" value="5">
-                            <label for="radio11">★</label>
-                          <input id="radio12" type="radio" name="estrellas" value="4">
-                            <label for="radio12">★</label>
-                          <input id="radio13" type="radio" name="estrellas" value="3">
-                            <label for="radio13">★</label>
-                          <input id="radio14" type="radio" name="estrellas" value="2">
-                            <label for="radio14">★</label>
-                          <input id="radio15" type="radio" name="estrellas" value="1">
-                            <label for="radio15">★</label>
+                          <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                          <input id="radio2" type="radio" name="estrellas" value="4">
+                            <label for="radio2">★</label>
+                          <input id="radio3" type="radio" name="estrellas" value="3">
+                            <label for="radio3">★</label>
+                          <input id="radio4" type="radio" name="estrellas" value="2">
+                            <label for="radio4">★</label>
+                          <input id="radio5" type="radio" name="estrellas" value="1">
+                            <label for="radio5">★</label>
                         </p>
-                    </form>
-
-                    <div class="costo">
-                        <p>Precio por noche</p>
-                        <b>COP 110.000</b>
+                      </form>
                     </div>
-                                        
-                </div>
-                <div class="container">
-                                          
-                    <a href="https://www.hotelchicamocha.com/" target="_blank"><img class="img" src="img/chicamocha.jpg" height="200px" width="200px" alt="logo de hotel"></a>
-                
-                    <h2 class="titulo">Hotel Chicamocha</h2>
-                    <p class="text"><b> El Hotel Chicamocha ofrece habitaciones modernas con WiFi gratuita en el centro de Bucaramanga, a 30 minutos en coche del aeropuerto de Palonegro. El personal es muy amable, el desayuno variado con porciones muy buenas, limpieza excelente.</b></p>
+                    <p class="extracto">
+                      <b>El Hotel Buena Vista Express ofrece conexión Wi-Fi gratuita y un desayuno bufé en Bucaramanga. También cuenta con piscina al aire libre y alberga un restaurante. Habitación amplia y cómoda, Baño excelente. Un desayuno estupendo en la terraza con una vista muy agradable de la ciudad.</b>
+                    </p>
+                    <a href="http://buena-vista.hoteles-santander.com/es/" class="btn-link">Leer más</a>
+                  </div>
+                  <div class="contenedor_costo">
+                    <p>Precio por noche</p>
+                    <b>COP 172.000</b>
+                  </div>
+                </article>
 
-                    <form class="form">
-                        <p class="clasificacion">
-                          <input id="radio16" type="radio" name="estrellas" value="5">
-                            <label for="radio16">★</label>
-                          <input id="radio17" type="radio" name="estrellas" value="4">
-                            <label for="radio17">★</label>
-                          <input id="radio18" type="radio" name="estrellas" value="3">
-                            <label for="radio18">★</label>
-                          <input id="radio19" type="radio" name="estrellas" value="2">
-                            <label for="radio19">★</label>
-                          <input id="radio20" type="radio" name="estrellas" value="1">
-                            <label for="radio20">★</label>
-                        </p>
-                    </form>
-
-                    <div class="costo">
-                        <p>Precio por noche</p>
-                        <b>COP 172.000</b>
-                    </div>
+              </main>
+              <aside id="aside"></hr>
+                  <div id="maps">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3959.0822473439393!2d-73.10759518522597!3d7.116467294860993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sco!4v1632289219270!5m2!1ses!2sco" width="350" height="1050" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>                    
+                  </div>
+              </aside>
+          
+          <footer class="footer">
+            <div class="containerFooter">
+                <div class="colum1">
+                    <h1>Mas información de la Empresa</h1>
+                    <p>Esta compañia se dedica a reunir los mejores hoteles y restaurantes de Bucaramanga, en un conjunto de opciones faciles para el alcance de nuestros usarios.</p>
                     
                 </div>
-				
-            </div>
-            <div id="aside"></hr>
-                <div id="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3959.0822473439393!2d-73.10759518522597!3d7.116467294860993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sco!4v1632289219270!5m2!1ses!2sco" width="350" height="1050" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>                    
+
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <a href="#"><i class="fab fa-fw fa-facebook"></i></a>
+                        <p>Siguenos en Facebook</p>
+                    </div>
+
+                    <div class="row">
+                        <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+                        <p>Siguenos en Instegram</p>
+                    </div>
+
+                    <div class="row">
+                        <a href="#"><i class="fab fa-fw fa-whatsapp"></i></a>
+                        <p>Siguenos en Whatsapp</p>
+                    </div>
+
+                    <div class="row">
+                        <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+                        <p>Siguenos en Twitter</p>
+                    </div>
+                    
                 </div>
+                <div class="colum3">
+                    <h1>Información Contactos</h1>
+
+                    <div class="row2">
+                        <i class="fas fa-mail-bulk"></i>
+                        <p>lanovena09@gmail.com</p>                        
+                    </div>
+
+                    <div class="row2">
+                        <i class="fas fa-globe-americas"></i>
+                        <p>Bucaramanga-Colombia Av. 42 # 48-11</p>                        
+                    </div>
+
+                    <div class="row2">
+                        <i class="fas fa-phone"></i>
+                        <p>+01-607-9037891</p>                        
+                    </div>
+
+                </div>		
             </div>
-        </div>
-        <footer>
-          <div class="containerFooter">
-              <div class="colum1">
-                  <h1>Mas información de la Empresa</h1>
-                  <p>Esta compañia se dedica a reunir los mejores hoteles y restaurantes de Bucaramanga, en un conjunto de opciones faciles para el alcance de nuestros usarios.</p>
-                  
-              </div>
+            <div class="containerFinal">
 
-              <div class="colum2">
-                  <h1>Redes Sociales</h1>
+                <div class="copyringht">
+                    Derechos de Autor Reservados &#9426 2021 Hoteleria La Novena  
+                </div>
 
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-facebook"></i></a>
-                      <p>Siguenos en Facebook</p>
-                  </div>
+                <div class="informacion">
+                    Información | Privacidad y politica | Terminos y Condiciones
+                </div>
 
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
-                      <p>Siguenos en Instegram</p>
-                  </div>
-
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-whatsapp"></i></a>
-                      <p>Siguenos en Whatsapp</p>
-                  </div>
-
-                  <div class="row">
-                      <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
-                      <p>Siguenos en Twitter</p>
-                  </div>
-                  
-              </div>
-              <div class="colum3">
-                  <h1>Información Contactos</h1>
-
-                  <div class="row2">
-                      <i class="fas fa-mail-bulk"></i>
-                      <p>lanovena09@gmail.com</p>                        
-                  </div>
-
-                  <div class="row2">
-                      <i class="fas fa-globe-americas"></i>
-                      <p>Bucaramanga-Colombia Av. 42 # 48-11</p>                        
-                  </div>
-
-                  <div class="row2">
-                      <i class="fas fa-phone"></i>
-                      <p>+01-607-9037891</p>                        
-                  </div>
-
-              </div>		
-          </div>
-          <div class="containerFinal">
-
-              <div class="copyringht">
-                  Derechos de Autor Reservados &#9426 2021 Hoteleria La Novena  
-              </div>
-
-              <div class="informacion">
-                  Información | Privacidad y politica | Terminos y Condiciones
-              </div>
-
-          </div>
-      </footer>       
+            </div>
+          </footer>       
     </div>
-</body>
+  </body>
 </html>

@@ -2,16 +2,20 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+}
 div#contenedor{
     width: 95%; 
     height: 2000px;
-    max-width: 75em;
+    
     background-color: #fff8dc;
     margin: 0.5em auto; padding: 0.5em;
     font-family: "calibri";
 }
 header{
-    height: 12%;
+    
     border-radius: 0.5em; 
     border-color: #000;
     margin: 0.3em;
@@ -115,23 +119,25 @@ div#nav{
     background-color:#00008b ;
 }
 
-#menu ul{
-    list-style: none;
-    margin: 0;
-    padding: auto;
+#menu {
+    border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
 }
-#menu ul li{
-    display: inline-block;
-}
-#menu ul li a{
+#menu a{
+    padding: 29px;
     color: white;
     display:block;
-    padding: 29px;
     text-decoration: none;
-    font-size: 20px;
-    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 16px;
 }
-#menu ul li a:hover{
+#menu a:hover{
     background-color: #4244b8;
 }
 div#footer{
@@ -279,4 +285,18 @@ footer h1{
 
 .informacion{
     margin-right: 1em;
+}
+@media (max-width: 1200px){
+    body{
+        font-size: 14px;
+    }
+}
+@media (max-width: 992px){
+    
+}
+@media (max-width: 768px){
+    
+}
+@media (max-width: 576px){
+    
 }
