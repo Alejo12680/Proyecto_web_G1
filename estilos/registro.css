@@ -28,7 +28,7 @@ div#section1{
 div#section{
     float: left;
     height: 100%;
-    width: 55.7%;
+    width: 55%;
     background-size: 100% 100%;
     background-color: #ebe5e1;
     border-radius: 0.5em;
@@ -39,7 +39,7 @@ div#section{
 }
 div#aside{
     height: 100%;
-    width: 21%;
+    width: 20%;
     background-color: slategrey;
     border-radius: 0.5em;  
     margin-left: 0.5em; 
@@ -106,6 +106,7 @@ div#aside{
     font-size: 22px;
 }
 #maps{
+    height: 100%;
     margin: 0%;
     margin-top: 0.5em;
     border-radius: 5em;

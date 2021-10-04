@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>La Novena_G1</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       
       <link rel="stylesheet" href="estilos/style.css">
@@ -16,16 +17,18 @@
       <header class="header">
         <div class="logo"></div>
         <div class="banner"></div>
-          <nav id="menu">
-            <a href="Index.html">Inicio</a>
-            <a href="registro.html">Registro</a>
-            <a href="logueo.html">Ingresar</a>
-            <a href="restaurantes.html">Gastronomia</a>
-            <a href="contactanos.html">Contactanos</a>
-          </nav>
-        </header>
-
           
+        </header>
+          <div class="nav_bar">
+            <nav id="menu">
+              <a href="Index.html">Inicio</a>
+              <a href="registro.html">Registro</a>
+              <a href="logueo.html">Ingresar</a>
+              <a href="restaurantes.html">Gastronomia</a>
+              <a href="contactanos.html">Contactanos</a>
+            </nav>
+          </div>
+
             <main id="section1">
               <div id="calendario">
                   <div id="anterior" onclick="mesantes()"></div>
@@ -74,11 +77,11 @@
               <main class="section">
                 <article class="articulo">
                   <div class="contenedor-thumbnail">
-                    <a href="https://www.sonesta.com/es/co/santander/bucaramanga/sonesta-hotel-bucaramanga" target="_blank"><img class="img" src="img/sonesta.png" height="200px" width="200px" alt="logo del hotel"></a>
+                    <a href="https://www.sonesta.com/es/co/santander/bucaramanga/sonesta-hotel-bucaramanga" target="_blank"><img class="img" src="img/sonesta.png" alt="logo del hotel"></a>
                   </div>
                   <div class="contenedor-texto">
                     <div>
-                      <h2 class="titulo">Hotel Sonesta</h2>
+                      <h2 class="titulo">Hotel Sonesta</h2> 
                       <form class="form">
                         <p class="clasificacion">
                           <input id="radio1" type="radio" name="estrellas" value="5">
@@ -107,7 +110,7 @@
 
                 <article class="articulo">
                   <div class="contenedor-thumbnail">
-                    <a href="http://buena-vista.hoteles-santander.com/es/" target="_blank"><img class="img" src="/img/buenaVista.jpg" height="200px" width="200px" alt="logo de hotel"></a>
+                    <a href="http://buena-vista.hoteles-santander.com/es/" target="_blank"><img class="img" src="/img/buenaVista.jpg" alt="logo de hotel"></a>
                   </div>
                   <div class="contenedor-texto">
                     <div>
@@ -138,10 +141,76 @@
                   </div>
                 </article>
 
+                <article class="articulo">
+                  <div class="contenedor-thumbnail">
+                    <a href="https://www.hotelchicamocha.com/" target="_blank"><img class="img" src="img/chicamocha.jpg" alt="logo de hotel"></a>
+                  </div>
+                  <div class="contenedor-texto">
+                    <div>
+                      <h2 class="titulo">Hotel Chicamocha</h2>
+                      <form class="form">
+                        <p class="clasificacion">
+                          <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                          <input id="radio2" type="radio" name="estrellas" value="4">
+                            <label for="radio2">★</label>
+                          <input id="radio3" type="radio" name="estrellas" value="3">
+                            <label for="radio3">★</label>
+                          <input id="radio4" type="radio" name="estrellas" value="2">
+                            <label for="radio4">★</label>
+                          <input id="radio5" type="radio" name="estrellas" value="1">
+                            <label for="radio5">★</label>
+                        </p>
+                      </form>
+                    </div>
+                    <p class="extracto">
+                      <b>El Hotel Chicamocha ofrece habitaciones modernas con WiFi gratuita en el centro de Bucaramanga, a 30 minutos en coche del aeropuerto de Palonegro. El personal es muy amable, el desayuno variado con porciones muy buenas, limpieza excelente.</b>
+                    </p>
+                    <a href="https://www.hotelchicamocha.com/" class="btn-link">Leer más</a>
+                  </div>
+                  <div class="contenedor_costo">
+                    <p>Precio por noche</p>
+                    <b>COP 172.000</b>
+                  </div>
+                </article>
+
+                <article class="articulo">
+                  <div class="contenedor-thumbnail">
+                    <a href="https://hotelbgabucaramanga.com/" target="_blank"><img class="img" src="img/hotelBGA.jpg" alt="logo de hotel"></a>
+                  </div>
+                  <div class="contenedor-texto">
+                    <div>
+                      <h2 class="titulo">Hotel BGA</h2>
+                      <form class="form">
+                        <p class="clasificacion">
+                          <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                          <input id="radio2" type="radio" name="estrellas" value="4">
+                            <label for="radio2">★</label>
+                          <input id="radio3" type="radio" name="estrellas" value="3">
+                            <label for="radio3">★</label>
+                          <input id="radio4" type="radio" name="estrellas" value="2">
+                            <label for="radio4">★</label>
+                          <input id="radio5" type="radio" name="estrellas" value="1">
+                            <label for="radio5">★</label>
+                        </p>
+                      </form>
+                    </div>
+                    <p class="extracto">
+                      <b>El Santander BGA Hotel boutique ofrece un restaurante y habitaciones con conexión WiFi gratuito. El centro de la ciudad de Bucaramanga se encuentra a 18 minutos a pie. Cerca de Centro Comercial Cuarta Etapa y Quinta Etapa.</b>
+                    </p>
+                    <a href="https://hotelbgabucaramanga.com/" class="btn-link">Leer más</a>
+                  </div>
+                  <div class="contenedor_costo">
+                    <p>Precio por noche</p>
+                    <b>COP 172.000</b>
+                  </div>
+                </article>
+
               </main>
               <aside id="aside"></hr>
                   <div id="maps">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3959.0822473439393!2d-73.10759518522597!3d7.116467294860993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sco!4v1632289219270!5m2!1ses!2sco" width="350" height="1050" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>                    
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3959.0822473439393!2d-73.10759518522597!3d7.116467294860993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sco!4v1632289219270!5m2!1ses!2sco" width="95%" height="95%" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>                    
                   </div>
               </aside>
           
