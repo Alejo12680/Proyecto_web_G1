@@ -27,7 +27,7 @@ class ClienteController extends Controller
              //     "validado"=> $cliente->clave==$clave
         // );
         // return $res;
-        
+
         $credentials = $request->all();
         $cliente = Cliente::where('correo', $credentials['correo'])->first();
         if(Hash::check($credentials['clave'], $cliente['clave'])){
@@ -37,14 +37,22 @@ class ClienteController extends Controller
         }
         return array('token' => $token);
        
-
     }
 
     // public function update(Request $request){
-
     // }
 
-    public function showAll(){
-        return Cliente::all();
+    public function update(Request $request){
+        $data = $request->all();
+        $update= Cliente::where('doc', '1127')->update($data)!=0;
+        return array('update'=>$update);
+
+        // $data = $request->all();
+        // return Cliente::where('doc', '1127')->update($data);
+
     }
+
+    // public function showAll(){
+    //     return Cliente::all();
+    // }
 }
