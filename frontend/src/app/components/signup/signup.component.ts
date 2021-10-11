@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { NgForm, FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-signup',
@@ -8,9 +9,11 @@ import { DataService } from '../../services/data.service';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(
+    private data:DataService
+  ){}
+    ngOnInit(): void {
+      // this.data.saludar();
+    }
   }
-
-}
+  
