@@ -30,7 +30,7 @@ div#section{
     height: 100%;
     width: 55%;
     background-size: 100% 100%;
-    background-color: #ebe5e1;
+    background-image: url(/img/madera.jpg);
     border-radius: 0.5em;
     border-radius: 1em;
     font-family: calibri;
@@ -58,7 +58,7 @@ div#aside{
 }
 .form-contacto{
     width: 80%;
-    background-color: rgb(220, 222, 226);
+    background-color: rgb(245, 245, 220, 0.705);
     padding: 30px;
     margin: auto;
     margin-top: 40px;

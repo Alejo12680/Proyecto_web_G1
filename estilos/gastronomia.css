@@ -199,27 +199,27 @@ div#nav{
     
 }
 
-menu ul{
-    list-style: none;
-    margin: 0;
-    padding: auto;
+#menu {
+    border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
 }
-#menu ul li{
-    display: inline-block;
-}
-#menu ul li a{
+#menu a{
+    padding: 29px;
     color: white;
     display:block;
-    padding: 29px;
     text-decoration: none;
-    font-size: 20px;
-    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 16px;
 }
-#menu ul li a:hover{
+#menu a:hover{
     background-color: #4244b8;
-
 }
-
 div#contenido{
     height: 55%;
     background-color: #fff8dc;
