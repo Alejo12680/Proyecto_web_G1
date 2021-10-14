@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { NgForm, FormGroup, FormControl } from '@angular/forms';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -17,25 +18,24 @@ export class SignupComponent implements OnInit {
   });
 
   constructor(
-    private data:DataService
+    private data:DataService,
     private route:ActivatedRoute
   ){}
     ngOnInit(): void {
       // this.data.saludar();
+      this.route.paramMap.subscribe(function(data){
+        let id = data.get('id');
+  
+        console.log(id);
+      })
     }
+  
+    signup(){
+      this.data.signup(this.form.value).subscribe(function(data){
+        
+      });
+    } 
   }
 
-  ngOnInit(): void {
-    this.route.paramMap.subscribe(function(data){
-      let id = data.get('id');
-
-      console.log(id);
-    })
-  }
-
-  signup(){
-    this.data.signup(this.form.value).subscribe(function(data){
-      
-    });
-  } 
+  
   
