@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Habitacion;
+use App\Models\Cliente;
 
 class Reserva extends Model
 {
