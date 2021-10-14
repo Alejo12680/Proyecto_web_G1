@@ -1,1 +1,48 @@
-<p>login works!</p>
+    <!-- <form >
+        <fieldset>
+            <h3>Inicio de Sesion</h3>
+        
+        <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese su correo" style="height: 50px"></textarea><br/>
+       
+        <input class="control" type="text" name="passw" id="passw" placeholder="Cree su contraseña"style="height: 50px"></textarea><br/>
+        <p> </p>
+        <div>
+            <input class="boton2" type="submit" onclick="location.href='#openModal'" value="Iniciar"><br/>
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Configuración de usuario</h2><br/>
+                    <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese contraseña actual" style="height: 50px"></textarea><br/>
+                    <input class="control" type="text" name="passw" id="passw" placeholder="Cree contraseña nueva"style="height: 50px"></textarea><br/>
+                    <input class="boton2" type="submit" value="Guardar"><br/>
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </form>  
+        <p>¿Todavía no tienes una cuenta?</p>
+    
+        <a href="registro.html">Crea una Cuenta</a></li>         
+        </fieldset>            -->
+
+        <!-- profesor: -->
+
+        <div class="d-flex justify-content-center align-items-center h-100" [formGroup]="form">
+            <div class="card col-4 p-5">
+                <div>
+                    <p class="fs-2 fw-bold text-center">Iniciar sesión</p>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="fw-bold">Correo: </label>
+                    <input type="text" name="email" class="form-control" id="email" placeholder="pepito@gmail.com" formControlName="correo">
+                </div>
+                <div class="mb-4">
+                    <label for="doc" class="fw-bold">Contraseña: </label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="*********" formControlName="clave">
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" (click)="login()">Ingresar</button>
+                    <button class="btn btn-primary" (click)="signup()">Registrarme</button>
+                </div>            
+            </div>
+        </div>

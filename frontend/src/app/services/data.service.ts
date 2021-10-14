@@ -13,11 +13,11 @@ export class DataService {
   ) { }
 
   signup(data:Object):Observable<any>{
-    return this.http.post(this.API+'/cliente/signup', data);
+    return this.http.post(this.API+'/Cliente/signup', data);
   }
 
   login(data:Object):Observable<any>{
-    return this.http.post(this.API+'/cliente/login', data);
+    return this.http.post(this.API+'/Cliente/login', data);
   }
 
 }
