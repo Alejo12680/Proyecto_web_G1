@@ -32,7 +32,7 @@ export class SignupComponent implements OnInit {
   
     signup(){
       this.data.signup(this.form.value).subscribe(function(data){
-        console.log(this.data);        
+        console.log(data);        
       });
     } 
   }
