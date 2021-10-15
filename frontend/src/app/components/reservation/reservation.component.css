@@ -1,0 +1,15 @@
+#menu {
+    border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+}
+.control{
+    width: 90%;
+    padding: 10px;
+    border-bottom: 4px;
+    margin-bottom: 16px;
+    border: 1px;
+    font-family: 'calibri';
+    font-size: 20px;
+}

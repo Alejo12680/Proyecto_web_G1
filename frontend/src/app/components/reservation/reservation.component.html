@@ -1,21 +1,88 @@
-<form>
-    <img src="https://picsum.photos/200" alt="foto resultado 1">
-    <h4>Nombre del hotel</h4>
-    <h4>Estrellas del hotel</h4>
-    <h4>Telefono del hotel</h4>
-    <h4>Dirección Hotel</h4>
-    <h5>Nombre de la ciudad</h5>
-    <h5>Tipo de habitación</h5>
-    <h5>capacidad</h5>
-    <h5>minibar</h5>
-    <h5>precio</h5>
-    <h5>piso - numero</h5>
+<div class="nav_bar">
+  <nav id="menu">
+    <input class="control" type="submit" onclick="location.href='home()'" value="Inicio"> &nbsp;
+    <input class="control" type="submit" onclick="location.href='signup()'" value="Registro"> &nbsp;
+    <input class="control"  type="submit" onclick="location.href='login()'" value="Ingresar"> &nbsp;
+    <input class="control"  type="submit" onclick="location.href='profile()'" value="Perfil"> &nbsp;
+    <input class="control" type="submit" onclick="location.href='reservation()'" value="Reservar"> &nbsp;
+  </nav>
+</div>   
+<div>
+  <main class="section">
+    <div class="contenedor-thumbnail">
+        <a href="https://hotelbgabucaramanga.com/" target="_blank"><img class="img" src="img/sonesta.png" alt="logo del hotel"></a>
+    </div>
+    <div class="contenedor-texto">
+      <div>
+          <h2 class="titulo">Hotel BGA</h2> 
+          <form class="form">
+            <p class="clasificacion">
+              <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+              <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+              <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+              <input id="radio4" type="radio" name="estrellas" value="2">
+                <label for="radio4">★</label>
+              <input id="radio5" type="radio" name="estrellas" value="1">
+                <label for="radio5">★</label>
+            </p>
+          </form>
+        </div> 
+        <div>
+          <form action="../form-result.php" target="_blank">
+            <p>Tipo de Habitación: 
+                <label> <input type="radio" name="habitacion" value="Sencilla"> Sencilla </label> 
+                <label> <input type="radio" name="habitacion" value="Doble"> Doble </label>
+                <label> <input type="radio" name="habitacion" value="Multiple"> Multiple </label>
+                <label> <input type="radio" name="habitacion" value="Suite"> Suite </label>
+  
+            </p>
+          </form>
+          <form action="../form-result.php" target="_blank">
+            <p>Capacidad: 
+                <label> <input type="radio" name="habitacion" value="Sencilla"> 1 a 2 </label> 
+                <label> <input type="radio" name="habitacion" value="Doble"> 2 </label>
+                <label> <input type="radio" name="habitacion" value="Doble"> 3 a 5 </label>
+  
+            </p>
+          </form>
+        <form action="../form-result.php" target="_blank">
+          <p>Minibar: 
+              <label> <input type="radio" name="habitacion" value="minibar"> Si </label> 
+              <label> <input type="radio" name="habitacion" value="minibar"> No</label>
+          </p>
+        </form>
+        <form action="../form-result.php" target="_blank">
+          <p>Piso: 
+              <label> <input type="radio" name="habitacion" value="piso"> 1 </label> 
+              <label> <input type="radio" name="habitacion" value="piso2"> 2 </label>
+              <label> <input type="radio" name="habitacion" value="piso3"> 3 </label>
+              <label> <input type="radio" name="habitacion" value="piso4"> 4 </label>
+              <label> <input type="radio" name="habitacion" value="piso5"> 5 </label>
 
+          </p>
+        </form>
+        </div>     
+
+       
+        
+      
+      <div class="contenedor_costo">
+        <p>Precio por noche</p>
+        <b>COP 172.000</b>
+      </div>
+      
+</div>
+
+<form>
+    <!-- <img src="https://picsum.photos/200" alt="foto resultado 1">-->
     <label for="start_date">Fecha de inicio: </label><input type="date" name="start_date" id="start_date"><br>
     <label for="end_date">Fecha de fin: </label><input type="date" name="end_date" id="end_date"><br><br>
-
-    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="comentarios"></textarea><br><br>
-
+    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="comentarios"></textarea><br><br> 
+    <div> <h4>Dirección: Cra 36 # 48-76, Bucaramanga, Santander</h4>
+      <h4>Teléfono: 6978491</h4></div>
     <input type="submit" value="reservar">
 </form>
 

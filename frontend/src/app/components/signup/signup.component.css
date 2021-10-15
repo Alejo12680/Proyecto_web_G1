@@ -1,3 +1,10 @@
+#menu {
+    border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+    text-align: center;
+}
 .form-contacto{
     width: 80%;
     background-color: rgb(245, 245, 220, 0.705);
