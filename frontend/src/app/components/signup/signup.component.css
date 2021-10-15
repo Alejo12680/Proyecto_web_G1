@@ -1,0 +1,32 @@
+.form-contacto{
+    width: 80%;
+    background-color: rgb(245, 245, 220, 0.705);
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+.form-contacto div{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.control{
+    width: 90%;
+    padding: 10px;
+    border-bottom: 4px;
+    margin-bottom: 16px;
+    border: 1px;
+    font-family: 'calibri';
+    font-size: 20px;
+}
+.form-contacto .boton1{
+    width: 49%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin-bottom: 16px;
+    margin: 16px 0;
+    font-size: 22px;
+}

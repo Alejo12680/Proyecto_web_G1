@@ -1,33 +1,29 @@
-    <!-- <form >
-        <fieldset>
-            <h3>Inicio de Sesion</h3>
-        
-        <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese su correo" style="height: 50px"></textarea><br/>
-       
-        <input class="control" type="text" name="passw" id="passw" placeholder="Cree su contraseña"style="height: 50px"></textarea><br/>
-        <p> </p>
-        <div>
-            <input class="boton2" type="submit" onclick="location.href='#openModal'" value="Iniciar"><br/>
-            <div id="openModal" class="modalDialog">
+<div>
+    <section class="form-contacto">
+        <form >
+            <!-- <fieldset> -->
                 <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <h2>Configuración de usuario</h2><br/>
-                    <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese contraseña actual" style="height: 50px"></textarea><br/>
-                    <input class="control" type="text" name="passw" id="passw" placeholder="Cree contraseña nueva"style="height: 50px"></textarea><br/>
-                    <input class="boton2" type="submit" value="Guardar"><br/>
-                    <p> </p>
+                    <h3>Inicio de Sesion</h3>
+                </div>                
+                <div>
+                    <input class="control" type="text" name="mail" id="mail" placeholder="Ingrese su correo" style="height: 50px"><br/>
+                    <input class="control" type="password" name="passw" id="passw" placeholder="Ingrese su contraseña"style="height: 50px"><br/>
                 </div>
-            </div>
-        </div>
-    </form>  
-        <p>¿Todavía no tienes una cuenta?</p>
-    
-        <a href="registro.html">Crea una Cuenta</a></li>         
-        </fieldset>            -->
+                <div>
+                    <input class="boton2" type="submit" onclick="location.href='login()'" value="Iniciar"> &nbsp;
+                    <input class="boton2" type="submit" onclick="location.href='signup()'" value="Registrarme"><br/>
+                </div>
+        </form>  
+            <!-- <p>¿Todavía no tienes una cuenta?</p>
+        
+            <a href="registro.html">Crea una Cuenta</a></li>          -->
+            <!-- </fieldset>            -->
+    </section>
+</div>      
 
         <!-- profesor: -->
 
-        <div class="d-flex justify-content-center align-items-center h-100" [formGroup]="form">
+        <!-- <div class="d-flex justify-content-center align-items-center h-100" [formGroup]="form">
             <div class="card col-4 p-5">
                 <div>
                     <p class="fs-2 fw-bold text-center">Iniciar sesión</p>
@@ -45,4 +41,4 @@
                     <button class="btn btn-primary" (click)="signup()">Registrarme</button>
                 </div>            
             </div>
-        </div>
+        </div> -->
