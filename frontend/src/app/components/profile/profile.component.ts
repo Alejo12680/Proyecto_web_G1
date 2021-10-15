@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { DataService } from 'src/app/services/data.service';
 
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -17,7 +18,7 @@ export class ProfileComponent implements OnInit {
 reservations: any[] = [];
 
   constructor(
-    private data:DataService
+    private data:DataService   
   ) { }
 
   ngOnInit(): void {

@@ -26,8 +26,8 @@ Route::get('/Habitacion/filter', [HabitacionController::class, 'filter']);
 Route::group(['middleware' => ['jwt.verify']], function(){
     Route::get('/Cliente', [ClienteController::class, 'showAll']);
     Route::post('/Cliente/update', [ClienteController::class, 'update']);
-    Route::post('/reservacion/create', [ReservaController::class, 'create']);
-    Route::post('/reservacion/history', [ReservaController::class, 'showByCliente']);
+    Route::post('/Reserva/create', [ReservaController::class, 'create']);
+    Route::post('/Reserva/history', [ReservaController::class, 'showByCliente']);
 });
 
 
